@@ -1,0 +1,275 @@
+
+
+/* ROOT STYLES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+}
+
+body {
+    background-color: #444444;
+    line-height: 1.5;
+    color: #FFFF;    
+}
+
+h1 {
+    font-family: "Monomaniac One", sans-serif;
+}
+
+h2 {
+    font-size: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFF;
+
+}
+
+a:hover {
+    color: #FF7A00;
+}
+
+
+
+/* Navbar style */
+
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    top: 0;
+    overflow: hidden;
+    background-color: #262626;
+    z-index: 1;
+    line-height: 3; 
+    
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    
+    
+}
+
+nav li {
+    list-style-type: none;
+    display: inline-block; 
+    font-size: 2rem; 
+}
+
+
+
+.basket {
+    width: 30px;
+    height: auto;
+}
+
+
+
+
+
+
+
+/* Responsive website section */
+
+@media(max-width: 600px) {
+    .footer-col, .footerImage, body {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 450px) {
+    .footer-col, .footerImage {
+        width: 100%;
+    }
+   
+    
+}
+
+
+
+
+/* Main page styles */
+
+.heroImages {
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: auto; 
+    
+}
+
+
+
+.personPlaying {
+    width: 100%;
+}
+
+
+
+
+
+
+
+/* BOTTOM FEATURED GAMES */
+
+.bottomCta {
+    height: auto;
+    max-width: 720px;   
+}
+
+.bottomContainer {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+
+.bottomCta:hover, .productImage:hover {
+    box-shadow: 0 0 26px RGBA(255,122,0,1);
+    transition: 0.5s;   
+}
+
+
+
+
+
+/* Products page styles */
+
+.productPageOffer {
+    width: 100%;
+}
+
+.productImage {
+    width: 234px;
+    height: 326px;
+}
+
+
+
+
+
+/* About page styles */
+
+
+
+/* Contact page styles */
+
+
+
+.needhelp {
+    max-width: 1080px;
+    height: 600px;
+    background-color: #FF7A00;
+}
+
+.circlecontact {
+    width: 200px;
+    height: 200px;
+    background-color: #FF7A00;
+    border-radius: 50%;
+}
+
+.formbox {
+    max-width: 600px;
+    height: 400px;
+    background-color: #444444;  
+}
+.customerservice-img {
+    width: 300px;
+    height: auto;
+}
+
+
+/* Cart page styles */
+
+
+
+/* Payment styles */
+
+
+
+/* Footer style */
+
+.container {
+    max-width: 1080px;
+    margin: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer {
+    background-color: #262626;
+    padding-top: 25px;
+    padding-bottom: 20px; 
+}
+.footer-col {
+    width: 25;
+    padding: 12px 60px;
+}
+.footer-col h4{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-weight: 700;
+    position: relative;
+}
+.footer-col .social-links  a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255, 0.2);
+    margin-right: 5px;
+    margin: 0 5px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 14px;  
+}
+
+
+
+
+.lineBottom {
+    border-bottom: 1px solid #FFFFFFFF;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.footerImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 270px;
+    height: auto;
+    
+}
+
+.paymentOptions {
+    max-width: 370px;
+    height: auto;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    padding-top: 25px;;
+    margin-bottom: 2px;
+}
