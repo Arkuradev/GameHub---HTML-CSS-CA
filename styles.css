@@ -79,13 +79,13 @@ nav li {
 
 /* Responsive website section */
 
-@media(max-width: 600px) {
+@media(max-width: 768px) {
     .footer-col, .footerImage, body {
         width: 50%;
         margin-bottom: 30px;
     }
 }
-@media(max-width: 450px) {
+@media(max-width: 320px) {
     .footer-col, .footerImage {
         width: 100%;
     }
@@ -162,30 +162,30 @@ nav li {
 
 /* Contact page styles */
 
-
-
-.needhelp {
-    max-width: 1080px;
-    height: 600px;
-    background-color: #FF7A00;
-}
-
-.circlecontact {
-    width: 200px;
-    height: 200px;
-    background-color: #FF7A00;
-    border-radius: 50%;
-}
-
-.formbox {
-    max-width: 600px;
-    height: 400px;
-    background-color: #444444;  
+.contactus {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
 }
 .customerservice-img {
+    float: left;
     width: 300px;
     height: auto;
 }
+.needhelp {
+    background-color: #FF7A00;    
+}
+.needhelp, .formbox {
+    max-width: 1200px;
+    height: auto;
+}
+/* Maybe make .formbox a child div to the main div contactus in order to easier place it to the right of the box? */ 
+
+.formbox {
+    background-color: #262626;  
+}
+
 
 
 /* Cart page styles */
@@ -213,10 +213,11 @@ footer {
     padding-bottom: 20px; 
 }
 .footer-col {
+    text-align: center;
     width: 25;
     padding: 12px 60px;
 }
-.footer-col h4{
+.footer-col h4 {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 15px;
@@ -236,9 +237,13 @@ footer {
     transition: all 0.3s ease;
 }
 
-ul {
+.footer-col ul {
     list-style-type: none;
     font-size: 14px;  
+}
+
+.footer-col li {
+    text-align: left;
 }
 
 
@@ -260,11 +265,6 @@ ul {
     max-width: 270px;
     height: auto;
     
-}
-
-.paymentOptions {
-    max-width: 370px;
-    height: auto;
 }
 
 .copyright {
