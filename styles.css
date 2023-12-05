@@ -180,9 +180,9 @@ nav li {
     max-width: 1200px;
     height: auto;
 }
-/* Maybe make .formbox a child div to the main div contactus in order to easier place it to the right of the box? */ 
-
 .formbox {
+    display: flex;
+    flex-direction: column;
     background-color: #262626;  
 }
 
