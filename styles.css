@@ -1,8 +1,9 @@
 
 
-/* ROOT STYLES */
+/* BODY STYLES */
 
 * {
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -35,12 +36,11 @@ a:hover {
 
 
 
-/* Navbar style */
+/* NAVBAR STYLING */
 
 
 header {
-    display: flex;
-    justify-content: space-evenly;
+    position: sticky;
     top: 0;
     overflow: hidden;
     background-color: #262626;
@@ -48,24 +48,14 @@ header {
     line-height: 3; 
     
 }
-
-nav {
-    width: 100%;
+nav ul {
     display: flex;
-    flex-flow: row nowrap;
     justify-content: space-evenly;
-    
-    
 }
-
 nav li {
     list-style-type: none;
-    display: inline-block; 
     font-size: 2rem; 
 }
-
-
-
 .basket {
     width: 30px;
     height: auto;
@@ -105,11 +95,9 @@ nav li {
     height: auto; 
     
 }
-
-
-
 .personPlaying {
-    width: 100%;
+    max-width: 1200px;
+    height: auto;
 }
 
 
@@ -121,17 +109,20 @@ nav li {
 /* BOTTOM FEATURED GAMES */
 
 .bottomCta {
-    height: auto;
+    display: flex;
+    height: 400px;;
     max-width: 720px;   
 }
-
 .bottomContainer {
     position: relative;
-    text-align: center;
     color: white;
 }
 
 
+
+br {
+    clear: both;
+}
 .bottomCta:hover, .productImage:hover {
     box-shadow: 0 0 26px RGBA(255,122,0,1);
     transition: 0.5s;   
@@ -146,7 +137,6 @@ nav li {
 .productPageOffer {
     width: 100%;
 }
-
 .productImage {
     width: 234px;
     height: 326px;
@@ -160,32 +150,71 @@ nav li {
 
 
 
-/* Contact page styles */
+/* CONTACT PAGE STYLING */
 
 .contactus {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 5px;
+    display: flex;
+    justify-content: center; 
 }
 .customerservice-img {
     float: left;
+    margin-left: 3px;
+    margin-top: 75px;
     width: 300px;
     height: auto;
 }
 .needhelp {
-    background-color: #FF7A00;    
-}
-.needhelp, .formbox {
-    max-width: 1200px;
-    height: auto;
+    background-color: #FF7A00;   
+    border-radius: 8px 0 0 8px;
+    width: 600px;
+    height: 550px;
+    margin-bottom: 30px;
 }
 .formbox {
     display: flex;
     flex-direction: column;
     background-color: #262626;  
+    border-radius: 0 8px 8px 0;
+    width: 600px;
+    height: 550px;
+    margin-bottom: 30px;;
 }
-
+.fullname, .email {
+    margin-left: 10px;
+    width: 580px;
+    height: 40px;  
+    font-size: 40;
+}
+#message {
+    margin-left: 10px;
+    height: 250px;
+    width: 580px;
+}
+.submit-contact {
+    display: block;
+    border-color: #FF7A00;
+    border-radius: 4px;
+    width: 140px;
+    height: 35px;
+    background-color: #FF7A00;
+    color: #FFF;
+    margin: 10px 10px 10px auto;
+}
+label {
+    margin-bottom: 5px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 8px;
+}
+#findus {
+    width: 350px;
+    height: 300px;
+    border-radius: 5px;
+}
+.findus-map {
+    text-align: right;
+    margin-right: 25px;
+}
 
 
 /* Cart page styles */
@@ -206,7 +235,6 @@ nav li {
     display: flex;
     flex-wrap: wrap;
 }
-
 footer {
     background-color: #262626;
     padding-top: 25px;

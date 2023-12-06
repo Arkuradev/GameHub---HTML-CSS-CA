@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Monomaniac+One&family=Montserrat:wght@100;400;500;700&family=Saira:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="images/ghfavicon.ico">
 
 </head>
@@ -26,6 +27,38 @@
     </header>
 
  <main>
+<div class="contactus-info">
+<section>   
+    <h1>Contact us here.</h1>
+    <p>We have 24/7 customer service. Have any questions? Fill out the form below and one of our representatives will contact you regarding your issue.</p>
+    <p>You can also check our FAQ here</p>
+    
+<div class="findus-map">
+    <h1>You can also find us here:</h1>
+    <iframe id="findus" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.8454152442891!2d10.698561935145923!3d59.918112834699144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416dcb389db10b%3A0x63ab4f14404f4c3c!2sDrammensveien%2C%20Oslo!5e0!3m2!1sno!2sno!4v1701875018873!5m2!1sno!2sno" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</section>
+
+<div class="faq-section">
+    <h2>FAQ</h2>
+
+    <h3>I purchased my game, now what?</h3>
+    <p>When you have purchased your game and the purchase is confirmed you can instantly download your game and play right away.</p>
+
+    <h3>I cannot find the game I want to purchase?</h3>
+    <p>We here at GameHub is always working hard to be able to offer the latest games on the market, dont have a game you are looking for? 
+    Please send us a message with the game you are looking to buy, or you can come back at a later time. 
+    We also send out regular emails to our email subscribers with info on the latest on GameHub.
+    </p>
+
+    <h3>I'm having issues making a purchase</h3>
+    <p>If you're having issues making a purchase on GameHub you can try a different payment method or contact customer support and we will assist you with your order.
+    For issues related to your card/bank we suggest you contact your bank for help. 
+    </p>
+
+</div>
+</div>
+
 <div class="contactus">    
     <div class="needhelp">
         <img src="images/customerservice.png" class="customerservice-img" alt="Customer service person">
@@ -33,21 +66,67 @@
         <p>contact@gamehub.com</p>
         <p>+47 123 45 678</p>
         <p>Drammensveien, 0148 Oslo</p>
-        <div class="circlecontact"></div>
     </div>
     
 
     <div class="formbox">
         <label for="name">Fullname</label>
-        <input type="text" class="fullname"></input>
+        <input type="text" class="fullname" alt="Your full name"></input>
         <label for="email">Email</label>
-        <input type="text" class="email"></input>
-        <label for="text" class="message">Message us here: </label>
-        <textarea id="message" rows="8" cols="50"></textarea>
-        <button>Submit</button>
+        <input type="text" class="email" ></input>
+        <label for="text" class="message">Message</label>
+        <textarea id="message"></textarea>
+        <button class="submit-contact">Submit</button>
     </div>
 </div>
 
  </main>   
+ <footer class="footer">
+    <div class="container">
+        <img src="images/GameHub_LogoFooter.png" alt="GameHub Logo" class="footerImage">
+    <div class="lineBottom"></div>
+        <div class="row">
+            <div class="footer-col">
+                <h4>Information</h4>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Affiliate Program</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get Help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Payment Options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Shopping</h4>
+                <ul>
+                    <li><a href="#">Play Station Games</a></li>
+                    <li><a href="#">PC Games</a></li>
+                    <li><a href="#">XBox Games</a></li>
+                    <li><a href="#">Nintendo Wii Games</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        
+        <p class="copyright"><span>&copy;</span> 2023 GameHub, All rights reserved.</p>   
+    </div>
+</footer>
 </body>
 </html>
