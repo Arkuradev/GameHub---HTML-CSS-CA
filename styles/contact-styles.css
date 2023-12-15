@@ -1,0 +1,75 @@
+.contactus {
+    display: flex;
+    justify-content: center; 
+}
+.customerservice-img {
+    float: left;
+    margin-left: 3px;
+    margin-top: 83px;
+    width: 300px;
+    height: auto;
+    
+}
+.needhelp {
+    background-color: #FF7A00;   
+    border-radius: 8px 0 0 8px;
+    width: 600px;
+    height: 550px;
+    
+}
+.formbox {
+    display: flex;
+    flex-direction: column;
+    background-color: #262626;  
+    border-radius: 0 8px 8px 0;
+    width: 600px;
+    height: 550px;
+    margin-bottom: 30px;;
+}
+.fullname, .email {
+    margin-left: 10px;
+    width: 580px;
+    height: 40px;  
+    font-size: 40;
+}
+#message {
+    margin-left: 10px;
+    height: 250px;
+    width: 580px;
+}
+.submit-contact {
+    display: block;
+    border-color: #FF7A00;
+    border-radius: 4px;
+    width: 140px;
+    height: 35px;
+    background-color: #FF7A00;
+    color: #FFF;
+    margin: 30px 10px 10px auto;
+}
+label {
+    margin-bottom: 5px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 8px;
+}
+#findus {
+    width: 350px;
+    height: 300px;
+    border-radius: 5px;
+    border: solid 2px;
+    border-color: #FF7A00;   
+}
+.findus-map {
+    /* temp styling. Look through positioning for this with additional adress information */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    line-height: 25px;
+    padding: 10px;
+}
+h3 {
+    padding: 10px;
+}
