@@ -3,10 +3,8 @@
 /* BODY STYLES */
 
 * {
-    
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: Montserrat, sans-serif;
 }
 
@@ -36,9 +34,6 @@ a {
 
 }
 
-a:hover {
-    color: #FF7A00;
-}
 
 /* NAVBAR STYLING */
 
@@ -48,9 +43,8 @@ header {
     top: 0;
     overflow: hidden;
     background-color: #262626;
-    z-index: 1;
-    line-height: 3; 
-    
+    z-index: 2;
+    line-height: 3;    
 }
 nav ul {
     display: flex;
@@ -89,48 +83,7 @@ nav li {
 
 
 
-
-/* Main page styles */
-
-.heroImages {
-    margin-left: auto;
-    margin-right: auto;
-    width: 600px;
-    height: auto; 
-    
-}
-.personPlaying {
-    max-width: 1200px;
-    height: auto;
-}
-
-
-
-
-
-
-
 /* BOTTOM FEATURED GAMES */
-
-.bottomCta {
-    display: flex;
-    height: 400px;;
-    max-width: 720px;   
-}
-.bottomContainer {
-    position: relative;
-    color: white;
-}
-
-
-
-br {
-    clear: both;
-}
-.bottomCta:hover, .productImage:hover {
-    box-shadow: 0 0 26px RGBA(255,122,0,1);
-    transition: 0.5s;   
-}
 
 
 
