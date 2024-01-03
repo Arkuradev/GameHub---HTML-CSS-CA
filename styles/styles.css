@@ -1,86 +1,90 @@
 
 
 /* BODY STYLES */
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: Montserrat, sans-serif;
-}
-
 body {
-    background-color: #444444;
-    line-height: 1.5;
-    color: #FFFF;    
+    font-family: Montserrat, sans-serif;
+    background-color: #262626;
+    color: #fff;
 }
-
-h1 {
-    font-family: "Monomaniac One", sans-serif;
-}
-
-h2 {
-    font-size: "Montserrat", sans-serif;
-}
-h3 {
-    font-size: 25px;
-}
-p {
-    font-size: 14px;
-}
-
 a {
     text-decoration: none;
-    color: #FFFF;
-
+    color: #fff;
 }
-
 
 /* NAVBAR STYLING */
 
+nav, #nav-checkbox {
+    display: none;
+}
+
+#nav-checkbox:checked ~ nav {
+    display: block;
+}
+
+nav {
+    position: absolute;
+    z-index: 1;
+    background: rgb(5, 5, 5);
+    border-radius: 3%;
+    left: 0;
+    
+}
 
 header {
-    position: sticky;
-    top: 0;
-    overflow: hidden;
-    background-color: #262626;
-    z-index: 2;
-    line-height: 3;    
-}
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
-}
-nav li {
-    list-style-type: none;
-    font-size: 2rem; 
-}
-.basket {
-    width: 30px;
-    height: auto;
+    position: relative;
+    color: #FF7400;
+    background: rgb(5, 5, 5);
+    padding: 20px 10px;
+    font-size: 1.5rem;  
+    
 }
 
+nav a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    text-align: center;
+    
+}
+
+nav a:hover {
+    color: #FF7400;
+}
+
+@media (min-width: 720px){
+    nav {
+        display: block;
+        position:static;
+        text-align: center;
+    }
+
+    .hamburger-icon {
+        display: none;
+    }
+
+    nav a {
+        display: inline-block;
+    }
+}
 
 
 
+/*
 
-
-
-/* Responsive website section */
-
-@media(max-width: 768px) {
-    .footer-col, .footerImage, body {
+@media(max-width: 720px) {
+    .footer-col, .footerImage, {
         width: 50%;
         margin-bottom: 30px;
     }
 }
-@media(max-width: 320px) {
+@media(max-width: 720px) {
     .footer-col, .footerImage {
         width: 100%;
     }
    
     
 }
-
+*/
 
 
 /* BOTTOM FEATURED GAMES */
@@ -90,15 +94,6 @@ nav li {
 
 
 /* Products page styles */
-
-.productPageOffer {
-    width: 100%;
-}
-.productImage {
-    width: 234px;
-    height: 326px;
-}
-
 
 /* Footer style */
 

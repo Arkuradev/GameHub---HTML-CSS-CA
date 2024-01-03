@@ -1,64 +1,48 @@
 <!--
 
-hero section: 
+header {
+    position: sticky;
+    top: 0;
+    background-color: #262626;
+    z-index: 2;
+    line-height: 3;    
+}
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+nav li {
+    list-style-type: none;
+    font-size: 2rem; 
+}
+.basket {
+    width: 30px;
+    height: auto;
+}
 
-<img class="heroImages" id="heroimage2" src="images/Just_Dance_Game_Free_Download.jpg" alt="Featured Games - Slide 2">
-<img class="heroImages" id="heroimage3" src="images/space-games-poster-900x563.webp" alt="Featured Games - Slide 3">
+.hamburger-icon {
+    margin-left: 5px;
+}
 
+@media(min-width: 720px) {
+    #nav-checkbox, .hamburger-icon {
+        display: none;
+    }
+}
 
-<footer>
-        
-        <img src="images/GameHub_LogoFooter.png" alt="GameHub Logo" class="footerImage">
-        <div class="lineBottom"></div>
+@media(max-width: 720px) {
+    nav, nav ul {
+        display: block;
+    }
+    nav,
+    #nav-checkbox {
+    display: none;
+    }
+    #nav-checkbox:checked ~ nav {
+        display: block;
+    }  
+}
 
-       
-    <h3>My Account</h3>
-
-        <ul class="footerLinks">
-            <li><a href="#">My Page</a></li> 
-            <li><a href="#">My Orders</a></li> 
-            <li><a href="#">Purchase Options</a></li> 
-            <li><a href="#">Lorum Ipsem</a></li>          
-        </ul>
-        
-
-
-        
-    <h3>Information</h3>
-    
-        <ul class="footerLinks">
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Information</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms & Condistions</a></li>
-        
-        </ul>
-
-
-
-       
-    <h3>Service</h3>
-
-        <ul class="footerLinks">
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact Support</a></li>
-            <li><a href="#">Partners</a></li>
-            <li><a href="#">Lorum Ipsem</a></li>
-       
-        </ul>
-
-        
-    <h3>Our Offers</h3>
-        
-        <ul class="footerLinks">
-            <li><a href="#">Lorum Ipsem</a></li>
-            <li><a href="#">Lorum Ipsem</a></li>
-            <li><a href="#">Lorum Ipsem</a></li>
-            <li><a href="#">Lorum Ipsem</a></li>
-        </ul>
-       
-
-        <p class="copyright"><span>&copy;</span> 2023 GameHub, All rights reserved.</p>
     </footer>
 
     -->
