@@ -1,17 +1,58 @@
 
 
-.preorder-img {
-    position: relative;
-    width: 75%;
-    height: auto;
-}
-
 .banner {
-    display: grid;
-    place-items: center;
+    position: relative;
+    height: 60rem;
 }
 
+.banner-image {
+    position: absolute;
+    width: 450px;
+    height: auto;
+    margin: 0;
+    top: 15%;
+    left: 50%;
+    right: 50%;  
+}
 
-.personPlaying {
-    width: 50%;
+.banner-text {
+    position: absolute;
+    inset: 0;
+    left: 30%;
+    top: 30%;
+    line-height: 50px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+.banner-text h2{
+    font-size: 50px;
+}
+.banner-text #btn{
+    display: block;
+    border-color: #FF7A00;
+    border-radius: 4px;
+    width: 140px;
+    height: 35px;
+    background-color: #FF7A00;
+    color: #FFF;  
+    text-transform: uppercase;
+    
+}
+
+@media (max-width: 920px){
+    .banner-image {
+        left: 10%;
+    }
+    .banner-text {
+        top: 78%;
+        text-align: center;
+        left:-20%;
+    }
+    #btn {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }

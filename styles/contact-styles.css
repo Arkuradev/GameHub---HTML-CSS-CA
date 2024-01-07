@@ -5,7 +5,7 @@
 .customerservice-img {
     float: left;
     margin-left: 3px;
-    margin-top: 83px;
+    margin-top: 81px;
     width: 300px;
     height: auto;
     
@@ -20,7 +20,7 @@
 .formbox {
     display: flex;
     flex-direction: column;
-    background-color: #262626;  
+    background-color: rgb(5, 5, 5);  
     border-radius: 0 8px 8px 0;
     width: 600px;
     height: 550px;
@@ -55,8 +55,8 @@ label {
 }
 #findus {
     width: 350px;
-    height: 300px;
-    border-radius: 5px;
+    height: 350px;
+    border-radius: 50%;
     border: solid 2px;
     border-color: #FF7A00;   
 }
@@ -66,10 +66,9 @@ label {
     margin-right: auto;
 }
 
-p {
-    line-height: 25px;
-    padding: 10px;
-}
-h3 {
-    padding: 10px;
+@media (max-width: 920px) {
+    .formbox {
+        display: flex;
+        flex-direction: column;
+    }
 }
