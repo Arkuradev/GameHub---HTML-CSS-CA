@@ -1,74 +1,120 @@
-.contactus {
-    display: flex;
-    justify-content: center; 
+/* Tomorrow we will make this responsive using grid. This is the goal for tomorrow. Have the contact form behave as your figma design making the form move below the picture with contact info.
+Also remember to change the form/button/image/contact info to look good on mobile */
+
+
+main {
+    padding-top: 100px;
 }
+
+.contactus{
+    display: flex;
+    justify-content: center;
+}
+
 .customerservice-img {
     float: left;
-    margin-left: 3px;
-    margin-top: 81px;
-    width: 300px;
+    margin-left: 6px;
+    margin-top: 116px;
+    width: 150px;
     height: auto;
-    
+}
+.contact-info {
+    height: 200px;
 }
 .needhelp {
     background-color: #FF7A00;   
     border-radius: 8px 0 0 8px;
-    width: 600px;
-    height: 550px;
-    
+    width: 400px;
+    height: 350px; 
 }
+.needhelp h1 {
+    float: right;    
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+.needhelp p {
+    float: right; 
+    padding-right: 5px;
+    line-height: 2.5;
+}
+
 .formbox {
-    display: flex;
-    flex-direction: column;
+    padding-top: 10px;
     background-color: rgb(5, 5, 5);  
     border-radius: 0 8px 8px 0;
-    width: 600px;
-    height: 550px;
-    margin-bottom: 30px;;
+    width: 400px;
+    height: 340px;
+    margin-bottom: 30px;
 }
 .fullname, .email {
     margin-left: 10px;
-    width: 580px;
-    height: 40px;  
+    line-height: 50px;
+    font-size: 0.9rem;
+    width: 380px;
+    height: 20px;  
     font-size: 40;
 }
 #message {
+    padding-top: 5px;
+    padding-left: 5px;
     margin-left: 10px;
-    height: 250px;
-    width: 580px;
+    font-size: 0.9rem;
+    height: 150px;
+    width: 377px;
 }
-.submit-contact {
-    display: block;
+.submit-btn {
     border-color: #FF7A00;
     border-radius: 4px;
     width: 140px;
     height: 35px;
     background-color: #FF7A00;
-    color: #FFF;
-    margin: 30px 10px 10px auto;
+    color: #FFF;  
+    margin-left: 33%;
+    font-weight: bold; 
+    margin-top: 10px;
 }
+
 label {
     margin-bottom: 5px;
     margin-top: 20px;
     margin-left: 10px;
     border-radius: 8px;
 }
-#findus {
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    border: solid 2px;
-    border-color: #FF7A00;   
-}
-.findus-map {
-    /* temp styling. Look through positioning for this with additional adress information */
-    margin-left: auto;
-    margin-right: auto;
-}
 
-@media (max-width: 920px) {
-    .formbox {
-        display: flex;
+@media (max-width: 760px) {
+    .contactus {
         flex-direction: column;
+        align-items: center;
+    }
+    .needhelp {
+        width: 360px;
+        height: 350px;
+        border-radius: 8px 8px 0 0;
+    }
+    .customerservice-img {
+        float: left;
+    }
+    .needhelp p {
+        font-size: 0.8rem;
+    }
+    .needhelp h1 {
+        font-size: 2rem;
+    }
+    .formbox {
+        justify-content: center;
+        line-height: 25px;
+        align-items: center;
+        border-radius: 0 0 8px 8px;
+        width: 360px;
+        height: 350px;
+    }
+    .fullname, .email {
+        width: 330px;
+        height: 20px;
+    }
+    #message {
+        width: 327px;
+        height: 150px;
     }
 }

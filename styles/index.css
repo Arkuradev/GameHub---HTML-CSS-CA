@@ -1,30 +1,30 @@
 
 
 .banner {
-    position: relative;
-    height: 60rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr auto;
+    grid-gap: 10px;
+    min-height: 450px;
+}
+
+.banner div {
+    background: lightblue;
 }
 
 .banner-image {
-    position: absolute;
     width: 450px;
-    height: auto;
-    margin: 0;
-    top: 15%;
-    left: 50%;
-    right: 50%;  
+    height: auto; 
+    margin-top: 75px;
 }
 
 .banner-text {
-    position: absolute;
-    inset: 0;
-    left: 30%;
-    top: 30%;
+    margin-top: 100px;
+    width: 450px;
     line-height: 50px;
     padding: 1rem;
     display: flex;
     flex-direction: column;
-    float: left;
 }
 .banner-text h2{
     font-size: 50px;
@@ -41,14 +41,14 @@
     
 }
 
-@media (max-width: 920px){
+@media (max-width: 720px){
     .banner-image {
-        left: 10%;
+        
     }
     .banner-text {
         top: 78%;
         text-align: center;
-        left:-20%;
+        flex-direction: column;
     }
     #btn {
         justify-content: center;
