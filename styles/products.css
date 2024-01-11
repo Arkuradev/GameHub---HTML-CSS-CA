@@ -1,0 +1,28 @@
+
+
+
+
+
+main {
+    padding-top: 100px;
+}
+
+
+.productImage {
+    width: 150px;
+    height: auto;
+    
+}
+
+.product-container {
+    display: flex;
+    
+}
+
+.product {
+    width: 150px;
+    height: 300px;
+    background-color: #262626;
+    border-radius: 0 0 8px 8px;
+    text-align: center; 
+}

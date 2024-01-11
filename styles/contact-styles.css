@@ -28,7 +28,8 @@ main {
     height: 350px; 
 }
 .needhelp h1 {
-    float: right;    
+    float: right;  
+    font-size: 2rem;  
     padding-top: 20px;
     padding-bottom: 10px;
     padding-right: 10px;
@@ -82,7 +83,7 @@ label {
     border-radius: 8px;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 770px) {
     .contactus {
         flex-direction: column;
         align-items: center;
