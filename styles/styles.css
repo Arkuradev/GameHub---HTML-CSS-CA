@@ -1,10 +1,4 @@
-
-
-:root{
-    --clr-dark: #262626; 
-    --clr-dark-grey: #444444;
-    --clr-primary: #FF7400;
-}
+@import url("variables.css");
 
 
 /* BODY STYLES */

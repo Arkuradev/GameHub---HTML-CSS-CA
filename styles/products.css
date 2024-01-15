@@ -1,12 +1,25 @@
-
+@import url("variables.css");
 
 
 
 
 main {
     padding-top: 100px;
+    
 }
 
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .productImage {
     width: 150px;
@@ -16,13 +29,43 @@ main {
 
 .product-container {
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 800px;
+    gap: 1.5em;
+    overflow: hidden;
 }
 
-.product {
+.game {
     width: 150px;
     height: 300px;
-    background-color: #262626;
+    background-color: var(--clr-dark);
     border-radius: 0 0 8px 8px;
-    text-align: center; 
+}
+.products-btn {
+    border-color: #FF7A00;
+    border-radius: 4px;
+    width: 100px;
+    height: 20px;
+    background-color: #FF7A00;
+    color: #FFF;  
+    margin-left: 20%;
+    font-weight: bold; 
+    margin-top: 10px;
+}
+#cart-checkbox, #cart-checkmark {
+    display: none;
+}
+#cart-checkbox:checked ~ #cart-checkmark {
+    display: block;
+}
+footer {
+    margin-top: 100px;
+}
+
+@media (max-width: 720px) {
+    .product-container {
+        width: 400px;
+    }   
 }

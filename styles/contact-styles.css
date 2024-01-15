@@ -1,9 +1,9 @@
-/* Tomorrow we will make this responsive using grid. This is the goal for tomorrow. Have the contact form behave as your figma design making the form move below the picture with contact info.
-Also remember to change the form/button/image/contact info to look good on mobile */
+@import url("variables.css");
 
 
 main {
-    padding-top: 100px;
+    padding-top: 200px;
+    margin-bottom: 300px;
 }
 
 .contactus{
@@ -22,7 +22,7 @@ main {
     height: 200px;
 }
 .needhelp {
-    background-color: #FF7A00;   
+    background-color: var(--clr-primary);   
     border-radius: 8px 0 0 8px;
     width: 400px;
     height: 350px; 
@@ -42,7 +42,7 @@ main {
 
 .formbox {
     padding-top: 10px;
-    background-color: rgb(5, 5, 5);  
+    background-color: var(--clr-dark);  
     border-radius: 0 8px 8px 0;
     width: 400px;
     height: 340px;
@@ -50,19 +50,24 @@ main {
 }
 .fullname, .email {
     margin-left: 10px;
+    margin-bottom: 10px;
     line-height: 50px;
     font-size: 0.9rem;
     width: 380px;
     height: 20px;  
     font-size: 40;
 }
-#message {
+
+.messagebox {
     padding-top: 5px;
     padding-left: 5px;
     margin-left: 10px;
     font-size: 0.9rem;
     height: 150px;
     width: 377px;
+}
+input:focus::-webkit-input-placeholder {
+    opacity: 0;
 }
 .submit-btn {
     border-color: #FF7A00;
@@ -114,8 +119,11 @@ label {
         width: 330px;
         height: 20px;
     }
-    #message {
+    .messagebox {
         width: 327px;
         height: 150px;
+    }
+    .submit-btn {
+        margin-top: 0;
     }
 }

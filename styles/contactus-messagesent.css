@@ -1,0 +1,41 @@
+@import url("variables.css");
+
+
+main {
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+    height: 800px;
+}
+
+h2, h3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#checkmark {
+    padding-left: 10px;
+    font-size: 1.8;
+    color: var(--clr-primary);
+}
+
+p {
+    padding-top: 20px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.goback-link {
+    text-decoration: underline;
+}
+
+a:hover {
+    color: var(--clr-primary);
+}
+
+@media (max-width:720px) {
+    main {
+        width: 400px;
+    }
+}

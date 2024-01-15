@@ -1,16 +1,15 @@
-
+@import url("variables.css");
 
 .banner {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: 1fr auto;
-    grid-gap: 10px;
-    min-height: 450px;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
 }
 
-.banner div {
-    background: black;
+.image-border{
+    border: solid 1px var(--clr-primary);
 }
+
 
 .banner-image {
     width: 450px;
@@ -31,7 +30,7 @@
 }
 .banner-text #btn{
     display: block;
-    border-color: #FF7A00;
+    border-color: var(--clr-primary);
     border-radius: 4px;
     width: 140px;
     height: 35px;
@@ -39,6 +38,17 @@
     color: #FFF;  
     text-transform: uppercase;
     
+}
+
+.information-line {
+    background-color: var(--clr-dark);
+    display: flex;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+#line-icons {
+    color: var(--clr-primary);
 }
 
 @media (max-width: 720px){
@@ -55,4 +65,20 @@
         align-items: center;
         text-align: center;
     }
+}
+
+
+
+.carousel {
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 24px;
+}
+
+.carousel .item {
+    scroll-snap-align: start;
+}
+
+.carousel-img {
+    width: 200px;
+    height: auto;
 }
