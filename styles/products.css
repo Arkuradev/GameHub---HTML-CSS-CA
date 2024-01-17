@@ -24,7 +24,6 @@ section {
 .productImage {
     width: 150px;
     height: auto;
-    
 }
 
 .product-container {
@@ -36,7 +35,12 @@ section {
     gap: 1.5em;
     overflow: hidden;
 }
-
+.product-container h3 {
+    text-align: center;
+}
+a:hover {
+    color: var(--clr-primary);
+}
 .game {
     width: 150px;
     height: 300px;
@@ -50,16 +54,11 @@ section {
     height: 20px;
     background-color: #FF7A00;
     color: #FFF;  
-    margin-left: 20%;
+    margin-left: 18%;
     font-weight: bold; 
     margin-top: 10px;
 }
-#cart-checkbox, #cart-checkmark {
-    display: none;
-}
-#cart-checkbox:checked ~ #cart-checkmark {
-    display: block;
-}
+
 footer {
     margin-top: 100px;
 }
