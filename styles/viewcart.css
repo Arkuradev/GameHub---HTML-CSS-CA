@@ -1,0 +1,53 @@
+@import url("variables.css");
+
+
+main {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+
+.cart-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.orange-breakline {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+.cart-info {
+    width: 100%; 
+    
+}
+
+.cart-titles {
+    background-color:orange;
+    text-align: center;
+    justify-content: space-evenly;   
+}
+
+.cart-img1 {
+    width: 100px;
+    height: auto;
+}
+
+.total-amount-container {
+    display: flex;
+    width: 120px;
+    height: 200px;
+}
+.payment-information {
+    flex-direction: column;
+}
+
+/*
+<div class="plus-minus-container">
+    <div class="minus">-</div>
+    <div class="total-products">1</div>
+    <div class="plus">+</div>
+*/
