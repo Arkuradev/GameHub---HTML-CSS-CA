@@ -1,5 +1,9 @@
 @import url("variables.css");
 
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
 
 /* BODY STYLES */
 *{
