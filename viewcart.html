@@ -28,11 +28,13 @@
 </header>
  <main>
 
-    <!- Make a dropdown menu for picking amount since JS is out of the window. 
-    Maybe check out Komplett.no for reference on the cart page for the product listed in the cart and make it look sort of similar. 
+    <!--
+    Work on positioning elements. 
+    Finish the positioning of the product row in the basket before adding another or leave as is with one example. 
+    Make it responsive. 
     
     
-    -!>
+    
 
 
     <div class="basket-container">
@@ -41,9 +43,9 @@
     </div>
 
         <div class="basket-sections">
-            <div class="section-name">Quantity</div>
-            <div class="section-name">Price</div>
-            <div class="section-name">Total</div>
+            Quantity
+            Price
+            Total</div>
         </div>
 
 <div class="game-container">
@@ -63,10 +65,58 @@
 </div>
 
 
+-->
+<div class="header-container">
+    <h1>Basket</h1>
+    <div class="header-links">
+    <a href="#">Add as wishlist</a> - 
+    <a href="#"> Clear basket</a>
+    </div>
+</div>
 
+<div class="basket-container">
+    <div class="product-container">
+        <img src="images/GameHub_covers.jpg" class="basketproduct-img" alt="Ping Pong Championship">
+    </div>
+    <div class="description">
+        <h4>Ping Pong Championship</h4>
+        <p>Get yourself ready to join the adventures of Ping Pong.</p>
+        <p>Become a world champion and master the arts of ping pong!</p>
+    </div>
+    <div class="quantity-container">
+        <h3>Quantity</h3>
+         <div class="button-bg">
+        <button class="quantity-btn" id="minus-btn">-</button>
+        1
+        <button class="quantity-btn" id="plus-btn">+</button>
+        </div>
+    </div>
+    <div class="price-container">
+        <h3>Price</h3>
+        <div class="price">$49</div>
+    </div>
+    <div class="totalprice-container">
+        <h3>Total</h3>
+        <div class="amount">$49</div>
+        <div class="discount">
+        Discount $0
+        </div>
+    </div>
+    </div>
+</div>
 
-
-
+<div class="discount-container">
+    <label for="discount"></label>
+    <input type="text" class="discount-code" placeholder="Discount Code">
+    <button class="discount-btn">Claim</button>
+</div>
+<div class="checkout-container">
+    <div class="subtotal">Subtotal <div class="subtotalsum">$49</div></div>
+    <div class="discount-amount">Discount <div class="discountsum">$0</div></div>
+    <div class="totalamount-checkout">Total <div class="totalsum">$49</div></div>
+    <div class="checkoutline"></div>
+    <button class="checkout-btn">Checkout</button>
+</div>
 
  </main>   
 
