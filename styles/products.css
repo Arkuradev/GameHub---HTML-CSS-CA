@@ -48,12 +48,12 @@ a:hover {
     border-radius: 0 0 8px 8px;
 }
 .products-btn {
-    border-color: #FF7A00;
+    background-color: var(--clr-dark);
+    color: var(--clr-primary);
+    border-color: var(--clr-primary);
     border-radius: 4px;
     width: 100px;
     height: 20px;
-    background-color: #FF7A00;
-    color: #FFF;  
     margin-left: 18%;
     font-weight: bold; 
     margin-top: 10px;

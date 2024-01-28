@@ -1,0 +1,183 @@
+@import url("variables.css");
+
+main {
+    padding-top: 180px;
+    padding-bottom: 180px;
+    overflow: hidden;
+}
+
+
+
+.paymentinfo {
+    display: flex;
+    width: 800px;
+    height: auto;
+    flex-direction: column;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: var(--clr-dark);
+}
+.paymentinfo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#arrow-left {
+    float: left;
+    font-size: 30px;
+    color: var(--clr-primary);
+    margin-left: 25px;
+}
+#x-mark {
+    float: right;
+    font-size: 30px;
+    color: var(--clr-primary);
+    margin-right: 25px;
+    
+   
+}
+.progressbar-payment {
+    width: 800px;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+.progressbar-payment h2 {
+    color: var(--clr-primary);
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 25px;
+
+}
+.one, .two, .three {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    padding-top: 3px;
+    text-align: center;
+    background-color: var(--clr-dark-grey);
+    border-radius: 50%;
+    z-index: 1;
+}
+.one {
+    background-color: var(--clr-primary);
+    color: var(--clr-dark);
+}
+.orangeline {
+    display: inline-block;
+    background-color: var(--clr-primary);
+    height: 2px;
+    width: 70px;
+    margin-bottom: 5px;
+    z-index: -1;
+}
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 10px;
+    margin: 20px;
+}
+input {
+    height: 30px;
+    margin-bottom: 10px;
+}
+.form__input {
+    display: block;
+    width: 300px;
+    align-items: center;
+}
+
+h3 {
+    color: var(--clr-primary);
+    margin-bottom: 10px;
+}
+
+.credit-card, .paypal, .bank {
+    width: 300px;
+    height: 40px;
+    padding-top: 10px;
+    padding-left: 5px;
+    background-color: var(--clr-dark-grey);
+}
+.credit-card {
+    border-radius: 10px 10px 0 0;
+}
+.bank {
+    border-radius: 0 0 10px 10px;
+}
+.credit-card:focus {
+    border: 1px solid var(--clr-primary);
+    background-color: var(--clr-dark);
+    color: var(--clr-primary);
+}
+.paypal:focus {
+    border: 1px solid var(--clr-primary);
+    background-color: var(--clr-dark);
+    color: var(--clr-primary);
+}
+.bank:focus {
+    border: 1px solid var(--clr-primary);
+    background-color: var(--clr-dark);
+    color: var(--clr-primary);
+}
+.payment-btn {
+    border-radius: 10px;
+    border-color: var(--clr-primary);
+    background-color: var(--clr-dark);
+    color: var(--clr-primary);
+    font-size: 20px;
+    font-weight: bold;
+    width: 180px;
+    height: 50px;
+    margin-bottom: 20px;
+    margin-top: 50px;   
+}
+
+@media (max-width: 810px) {
+    .paymentinfo {
+        width: 600px;
+    }
+    #arrow-left, #x-mark {
+        display: inline;
+        justify-content: space-evenly;
+        float: none;
+    }
+    #arrow-left {
+        margin-right: 200px;
+    }
+    #x-mark {
+        margin-left: 200px;
+    }
+}
+@media (max-width: 601px) {
+    .paymentinfo {
+        width: 280px;
+    }
+    #arrow-left {
+        margin-right: 80px;
+    }
+    #x-mark {
+        margin-left: 80px;
+    }
+    .form__input {
+       width: 170px; 
+       
+    }
+    fieldset {
+        font-size: 0.7rem;
+    }
+    .credit-card, .paypal, .bank {
+        width: 170px;
+        font-size: 0.7rem;
+    }
+}
+
+
+
+

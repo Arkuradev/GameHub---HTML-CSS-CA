@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Input your adress and the payment option of your choice">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Monomaniac+One&family=Montserrat:wght@100;400;500;700&family=Saira:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/paymentselection.css">
+    <link rel="icon" type="image/x-icon" href="images/ghfavicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>GameHub | Shipping</title>
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="nav-checkbox">
+        <label for="nav-checkbox" class="hamburger-icon"><i class="fas fa-bars"></i></label>
+        <nav>
+                <a href="index.html">Home</a>
+                <a href="products.html">Games</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="viewcart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </ul>
+        </nav>
+    </header>
+<main>
+<section class="paymentinfo">
+    <div class="paymentinfo-container">
+<div class="progressbar-payment">    
+    <a href="viewcart.html"><i class="fa-solid fa-arrow-left" id="arrow-left"></i></a>
+    <a href="index.html"><i class="fa-solid fa-xmark" id="x-mark"></i></a>
+    <h2>Make Payment</h2>
+    <div class="one">1</div>
+    <div class="orangeline"></div>
+    <div class="two">2</div>
+    <div class="orangeline"></div>
+    <div class="three">3</div>
+</div>
+
+<fieldset>
+    <label for="name">First name</label>
+    <input type="text" name="name" id="first-name" class="form__input" required>
+    <label for="last-name">Last name</label>
+    <input type="text" name="last-name" id="last-name" class="form__input" required>
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" class="form__input" required>
+    <label for="phone">Phone number</label>
+    <input type="tel" name="phone" id="phone" class="form__input">
+</fieldset>
+<fieldset>
+    <label for="adress">Adress</label>
+    <input type="text" name="adress" id="adress" class="form__input" required>
+    <label for="area-code">Area code</label>
+    <input type="text" name="area-code" id="area-code" class="form__input" required>
+    <label for="city">City</label>
+    <input type="text" name="acity" id="city" class="form__input" required>
+</fieldset>
+
+<h3>Select payment method</h3>
+<div class="payment-container">
+    <div tabindex="1" class="credit-card">
+        <i class="fa-regular fa-credit-card"></i> Credit Card or Debit
+    </div>
+    <div tabindex="2" class="paypal">
+        <i class="fa-brands fa-paypal"></i> Paypal     
+    </div>
+    <div tabindex="3" class="bank">
+        <i class="fa-solid fa-building-columns"></i> Bank Transfer  
+    </div>
+</div>
+<a href="payment-info.html"><button class="payment-btn">Go to Payment</button>
+</div>
+</section>
+
+
+</main>
+</body>
+<footer class="footer">
+    <div class="container">
+        <img src="images/GameHub_LogoFooter.png" alt="GameHub Logo" class="footerImage">
+    <div class="lineBottom"></div>
+        <div class="row">
+            <div class="footer-col">
+                <h4>Information</h4>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Affiliate Program</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get Help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Payment Options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Shopping</h4>
+                <ul>
+                    <li><a href="#">Play Station Games</a></li>
+                    <li><a href="#">PC Games</a></li>
+                    <li><a href="#">XBox Games</a></li>
+                    <li><a href="#">Nintendo Wii Games</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        
+        <p class="copyright"><span>&copy;</span> 2023 GameHub, All rights reserved.</p>   
+    </div>
+  </footer>
+  </html>
