@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Input your credit, bank or paypal information to make a purchase">
+    <meta name="description" content="Input your adress and the payment option of your choice">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Monomaniac+One&family=Montserrat:wght@100;400;500;700&family=Saira:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/paymentselection.css">
-    <link rel="stylesheet" href="styles/paymentinfo.css">
+    <link rel="stylesheet" href="styles/confirmed-payment.css">
     <link rel="icon" type="image/x-icon" href="images/ghfavicon.ico">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <title>GameHub | Payment Information</title>
+    <title>GameHub | Payment Confirmed</title>
 </head>
 <body>
     <header>
@@ -27,42 +27,28 @@
             </ul>
         </nav>
     </header>
-
     <main>
         <section class="paymentinfo">
             <div class="paymentinfo-container">
         <div class="progressbar-payment">    
-            <a href="paymentoptions.html"><i class="fa-solid fa-arrow-left" id="arrow-left"></i></a>
+            <a href="payment-info.html"><i class="fa-solid fa-arrow-left" id="arrow-left"></i></a>
             <a href="index.html"><i class="fa-solid fa-xmark" id="x-mark"></i></a>
-            <h1>Credit Card Details</h1>
+            <h1>Order Confirmed</h1>
             <div class="one">1</div>
             <div class="orangeline"></div>
             <div class="two">2</div>
             <div class="orangeline"></div>
             <div class="three">3</div>
         </div>
+        <h1>Order number #485367 confirmed!</h1>
+        <p>You have recieved an order confirmation to your email adress.
+        If you have not recieved this email within 5 minute(s), 
+        please contact our support and we will help you resolve the issue.</p>
         
-        <div class="cc-example">
-            <img src="images/creditcard.jpg" alt="Example of a Visa Card" class="cc-img">
-        </div>
-        <fieldset>
-            <label for="card-number">Card number</label>
-            <input type="text" name="card-number" id="card-number" class="form__input" required>
-            <label for="expire-date">Expire date</label>
-            <input type="month" name="expire-date" id="expire-date" class="form__input" required>
-            <label for="ccv">CCV</label>
-            <input type="text" name="ccv" id="ccv" class="form__input" required>
-            <label for="card-holder">Card holder name</label>
-            <input type="text" name="card-holder" id="card-holder" class="form__input" required>
-        </fieldset>
-        <a href="confirm-payment.html"><button class="payment-btn">Confirm</button></a>
-        
-    </section>
-        
+
+        <a href="index.html"><button class="payment-btn">Home</button>
     </main>
     </body>
-    
-
     <footer>
         <div class="logo-footer">
             <img src="images/GameHub_LogoFooter.png" alt="GameHub Logo">
@@ -108,4 +94,4 @@
         </div>
         <p class="copyright"><span>&copy;</span> 2023 GameHub, All rights reserved.</p>   
     </footer>
-</html>
+    </html>

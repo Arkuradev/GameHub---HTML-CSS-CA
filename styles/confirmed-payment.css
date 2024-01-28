@@ -1,0 +1,25 @@
+@import url("variables.css");
+
+h1 {
+    text-align: center;
+    
+}
+p {
+    margin-top: 20px;
+    line-height: 30px;
+    text-align: center;
+    height: 300px;
+}
+.one, .two, .three {
+    background-color: var(--clr-primary);
+    color: var(--clr-dark);
+}
+
+@media (max-width: 601px) {
+    h1 {
+        font-size: 1rem;
+    }
+    p {
+        font-size: 0.7rem;
+    }
+}

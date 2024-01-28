@@ -1,0 +1,39 @@
+@import url("variables.css");
+
+.one, .two {
+    background-color: var(--clr-primary);
+    color: var(--clr-dark);
+}
+.cc-img {
+    width: 230px;
+    height: auto;
+    padding: 12px;
+}
+.cc-example {
+    margin: 0 auto;
+}
+
+fieldset #expire-date {
+    width: 125px;
+    
+}
+fieldset #ccv {
+    width: 80px;
+    
+}
+fieldset #expire-date, #ccv {
+    display: flex;
+    flex-wrap: wrap;
+}
+label[for="expire-date"] {
+    width: 125px;
+}
+label[for="ccv"] {
+    width: 80px;    
+}
+
+@media (max-width: 601px) {
+    fieldset {
+        margin-left: 20px;
+    }
+}

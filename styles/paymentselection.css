@@ -33,9 +33,7 @@ main {
     float: right;
     font-size: 30px;
     color: var(--clr-primary);
-    margin-right: 25px;
-    
-   
+    margin-right: 25px;  
 }
 .progressbar-payment {
     width: 800px;
@@ -46,12 +44,11 @@ main {
     padding-top: 20px;
     margin-bottom: 30px;
 }
-.progressbar-payment h2 {
+.progressbar-payment h1 {
     color: var(--clr-primary);
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 25px;
-
 }
 .one, .two, .three {
     display: inline-block;
@@ -62,7 +59,6 @@ main {
     text-align: center;
     background-color: var(--clr-dark-grey);
     border-radius: 50%;
-    z-index: 1;
 }
 .one {
     background-color: var(--clr-primary);
@@ -90,9 +86,8 @@ input {
 .form__input {
     display: block;
     width: 300px;
-    align-items: center;
+    
 }
-
 h3 {
     color: var(--clr-primary);
     margin-bottom: 10px;
@@ -167,10 +162,12 @@ h3 {
     }
     .form__input {
        width: 170px; 
-       
     }
     fieldset {
         font-size: 0.7rem;
+    }
+    h3 {
+        font-size: 0.9rem;
     }
     .credit-card, .paypal, .bank {
         width: 170px;
