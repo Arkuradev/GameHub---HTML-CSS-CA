@@ -31,8 +31,8 @@ h1 {
     justify-content: space-evenly;
     border-bottom: 1px solid var(--clr-primary);
     border-top: 1px solid var(--clr-primary);
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 35px;
+    padding-bottom: 35px;
 }
 .product-container {
     margin-left: 50px;
@@ -138,19 +138,25 @@ input:focus::-webkit-input-placeholder {
     display: flex;
     flex-direction: column;
     float: right;
-    width: 300px;
+    width: 310px;
     height: 200px;
     margin-top: 50px;
     margin-right: 150px;
 }
 .subtotal {
-    word-spacing: 190px;
+    word-spacing: 180px;
+    padding-left: 10px;
 }
 .discount-amount {
-    word-spacing: 196px;
+    word-spacing: 186px;
+    background-color: var(--clr-dark);
+    border-radius: 10px;
+    width: 310px;
+    padding-left: 10px;
 }
 .totalamount-checkout {
-    word-spacing: 220px;
+    word-spacing: 210px;
+    padding-left: 10px;
 }
 
 .checkoutline {
@@ -159,7 +165,6 @@ input:focus::-webkit-input-placeholder {
     flex-direction: column;
 }
 .checkout-btn {
-    margin: 0 auto;
     width: 100px;
     height: 30px;
     background-color: var(--clr-dark);
@@ -197,7 +202,7 @@ footer {
         margin: 0 auto;
     }
     .description {
-        text-align: center;
+       text-align: center;
         margin-top: 20px;
     }
     .description h4 {

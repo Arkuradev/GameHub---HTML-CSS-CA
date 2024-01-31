@@ -6,7 +6,7 @@ main {
     margin-bottom: 300px;
 }
 
-.contactus{
+.contactus {
     display: flex;
     justify-content: center;
 }
@@ -20,6 +20,7 @@ main {
 }
 .contact-info {
     height: 200px;
+    color: var(--clr-dark);
 }
 .needhelp {
     background-color: var(--clr-primary);   
@@ -32,12 +33,13 @@ main {
     font-size: 2rem;  
     padding-top: 20px;
     padding-bottom: 10px;
-    padding-right: 10px;
+    margin-right: 10px;
 }
 .needhelp p {
     float: right; 
     padding-right: 5px;
-    line-height: 2.5;
+    margin-right: 10px;
+    margin-top: 30px;
 }
 
 .formbox {
@@ -45,10 +47,10 @@ main {
     background-color: var(--clr-dark);  
     border-radius: 0 8px 8px 0;
     width: 400px;
-    height: 340px;
+    height: 350px;
     margin-bottom: 30px;
 }
-.fullname, .email {
+.name, .email {
     margin-left: 10px;
     margin-bottom: 10px;
     line-height: 50px;
@@ -70,18 +72,19 @@ input:focus::-webkit-input-placeholder {
     opacity: 0;
 }
 .submit-btn {
-    border-color: #FF7A00;
+    border-color: var(--clr-primary);
     border-radius: 4px;
     width: 140px;
     height: 35px;
-    background-color: #FF7A00;
-    color: #FFF;  
+    background-color: var(--clr-dark);
+    color: var(--clr-primary);  
     margin-left: 33%;
-    font-weight: bold; 
-    margin-top: 10px;
+    font-weight: bold;
+    margin-top: 20px;
 }
 
 label {
+    color: var(--clr-primary);
     margin-bottom: 5px;
     margin-top: 20px;
     margin-left: 10px;
@@ -94,7 +97,7 @@ label {
         align-items: center;
     }
     .needhelp {
-        width: 360px;
+        width: 350px;
         height: 350px;
         border-radius: 8px 8px 0 0;
     }
@@ -102,20 +105,24 @@ label {
         float: left;
     }
     .needhelp p {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
     .needhelp h1 {
-        font-size: 2rem;
+        font-size: 1.3rem;
+    }
+    .needhelp h1, p {
+        margin-right: 10px;
+        margin-top: 40px;
     }
     .formbox {
         justify-content: center;
         line-height: 25px;
         align-items: center;
         border-radius: 0 0 8px 8px;
-        width: 360px;
+        width: 350px;
         height: 350px;
     }
-    .fullname, .email {
+    .name, .email {
         width: 330px;
         height: 20px;
     }

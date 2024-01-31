@@ -1,40 +1,22 @@
 @import url("variables.css");
 
-.banner {
-    display: flex;
-    justify-content: center;
-    padding-top: 100px;
-    overflow: hidden;
-    gap: 2em;
-}
-
-.banner-image {
-    width: 450px;
-    height: auto; 
-    margin-top: 75px;
-}
-
-.banner-text {
-    margin-top: 170px;
-    width: 450px;
+.featured-cta {
+    background-color: var(--clr-dark);
+    text-align: center;
     line-height: 50px;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
+    padding-top: 90px;
 }
-.banner-text h2{
-    font-size: 50px;
+.featured-cta img {
+    width: 100%;
+    height: auto;
 }
-.banner-text #btn{
-    display: block;
-    border-color: var(--clr-primary);
-    border-radius: 4px;
-    width: 140px;
-    height: 35px;
-    background-color: #FF7A00;
-    color: #FFF;  
-    text-transform: uppercase; 
+.buy-btn {
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 130px;
+    font-size: 1rem;
 }
+
 
 .information-line {
     background-color: var(--clr-dark);
@@ -56,27 +38,99 @@
     overflow: hidden;
     background-color: var(--clr-primary);
 }
+.community-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+.community-info {
+    background-color: var(--clr-dark);
+    text-align: center;
+    font-weight: bold;
+    padding-top: 90px;
+    line-height: 60px;
+    width: 600px;
+    height: 401px;
+    border-radius: 4px 0 0 4px;
+}
+.onlinegaming-img {
+    width: 600px;
+    height: auto;
+    border-radius: 0 4px 4px 0;
+}
 
 
 
-@media (max-width: 720px){
-    .banner {
-        flex-direction: column;
-    }
-    .banner-text {
+
+@media (max-width: 980px) {
+    .community-container {
+        flex-direction: column-reverse;
         justify-content: center;
-        text-align: center;
-    }
-    .banner-text #btn {
-        display: flex;
-        justify-content: center;
-        text-align: center;
         align-items: center;
     }
-    .banner-image {
+    .onlinegaming-img {
+        border-radius: 4px 4px 0 0;
+    }
+    .community-info {
+        border-radius: 0 0 4px 4px;
+    }
+}
+
+@media (max-width: 720px) {
+    .featured-cta h1 {
+        font-size: 1.5rem;
+    }
+    .featured-cta h2 {
+        font-size: 1rem;
+    }
+    .information-line h3 {
+        font-size: 0.5rem;
+        margin-left: 2px;
+    }
+    .information-line p {
+        font-size: 0.4rem;
+        margin-left: 2px;
+    }
+    #line-icons {
+        font-size: 1.9rem;
+    }
+    .onlinegaming-img {
+        width: 400px;
+        height: auto;
+    }
+    .community-info {
+        width: 400px;
+        height: auto;
+    }
+}
+
+@media (max-width: 430px) {
+    .onlinegaming-img {
         width: 300px;
         height: auto;
-        
+    }
+    .community-info {
+        width: 300px;
+        font-size: 0.7rem;
+        line-height: 40px;
+        padding-top: 40px;
+        height: auto;
+    }
+}
+
+@media (max-width: 300px) {
+    .information-line h3 {
+        font-size: 0.5rem;
+        margin-left: 10px;
+    }
+    .information-line p {
+        font-size: 0.4rem;
+        margin-left: 10px;
+    }
+    #line-icons {
+        font-size: 1.6rem;
+        padding-left: 10px;
     }
 }
 

@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Monomaniac+One&family=Montserrat:wght@100;400;500;700&family=Saira:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/paymentselection.css">
+    <link rel="stylesheet" href="styles/payment-selection.css">
     <link rel="icon" type="image/x-icon" href="images/ghfavicon.ico">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>GameHub | Adress</title>
@@ -22,15 +22,14 @@
                 <a href="products.html">Games</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
-                <a href="viewcart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-            </ul>
+                <a href="view-cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
         </nav>
     </header>
 <main>
 <section class="paymentinfo">
     <div class="paymentinfo-container">
 <div class="progressbar-payment">    
-    <a href="viewcart.html"><i class="fa-solid fa-arrow-left" id="arrow-left"></i></a>
+    <a href="view-cart.html"><i class="fa-solid fa-arrow-left" id="arrow-left"></i></a>
     <a href="index.html"><i class="fa-solid fa-xmark" id="x-mark"></i></a>
     <h1>Make Payment</h1>
     <div class="one">1</div>
@@ -38,11 +37,12 @@
     <div class="two">2</div>
     <div class="orangeline"></div>
     <div class="three">3</div>
-</div>
+    </div>
+
 
 <fieldset>
     <label for="name">First name</label>
-    <input type="text" name="name" id="first-name" class="form__input" required>
+    <input type="text" name="name" id="name" class="form__input" required>
     <label for="last-name">Last name</label>
     <input type="text" name="last-name" id="last-name" class="form__input" required>
     <label for="email">Email</label>
@@ -71,15 +71,18 @@
         <i class="fa-solid fa-building-columns"></i> Bank Transfer  
     </div>
 </div>
-<a href="payment-info.html"><button class="payment-btn">Go to Payment</button>
+    <form action="/payment-info.html">
+        <input type="submit" value="Home" class="payment-btn">
+    </form>
+</div>
 </section>
 
 
 </main>
-</body>
 <footer>
-    <div class="logo-footer">
+    <div class="logo">
         <img src="images/GameHub_LogoFooter.png" alt="GameHub Logo">
+        </div>
     <hr>
     <div class="footer-row">
         <div class="footer-column">
@@ -119,7 +122,7 @@
             </ul>
         </div>
     </div>    
-    </div>
     <p class="copyright"><span>&copy;</span> 2023 GameHub, All rights reserved.</p>   
 </footer>
-  </html>
+</body>
+</html>

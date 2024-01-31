@@ -1,12 +1,8 @@
 @import url("variables.css");
 
 main {
-    padding-top: 180px;
-    padding-bottom: 180px;
-    overflow: hidden;
+    padding-top: 150px;
 }
-
-
 
 .paymentinfo {
     display: flex;

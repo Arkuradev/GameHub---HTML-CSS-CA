@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Monomaniac+One&family=Montserrat:wght@100;400;500;700&family=Saira:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/viewcart.css">
+    <link rel="stylesheet" href="styles/view-cart.css">
     <link rel="icon" type="image/x-icon" href="images/ghfavicon.ico">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>GameHub | View Cart</title>
@@ -22,8 +22,7 @@
             <a href="products.html">Games</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
-            <a href="viewcart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-        </ul>
+            <a href="view-cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
     </nav>
 </header>
  <main>
@@ -41,7 +40,7 @@
         <img src="images/GameHub_covers.jpg" class="basketproduct-img" alt="Ping Pong Championship">
     </div>
     <div class="description">
-        <h4>Ping Pong Championship</h4>
+        <a href="product-page.html"><h4>Ping Pong Championship</h4></a>
         <p>Get yourself ready to join the adventures of Ping Pong.</p>
         <p>Become a world champion and master the arts of ping pong!</p>
     </div>
@@ -65,11 +64,11 @@
         </div>
     </div>
     </div>
-</div>
+
 
 <div class="discount-container">
     <label for="discount"></label>
-    <input type="text" class="discount-code" placeholder="Discount Code">
+    <input type="text" id="discount" class="discount-code" placeholder="Discount Code">
     <button class="discount-btn">Claim</button>
 </div>
 <div class="checkout-container">
@@ -77,17 +76,18 @@
     <div class="discount-amount">Discount $0</div>
     <div class="totalamount-checkout">Total $49</div>
     <div class="checkoutline"></div>
-    <a href="paymentoptions.html"><button class="checkout-btn">Checkout</button></a>
+    <form action="/payment-options.html">
+    <button type="submit" class="checkout-btn">Checkout</button>
+    </form>
 </div>
 
 
+
  </main>   
-
-</body>
-
-<footer>
-    <div class="logo-footer">
+ <footer>
+    <div class="logo">
         <img src="images/GameHub_LogoFooter.png" alt="GameHub Logo">
+        </div>
     <hr>
     <div class="footer-row">
         <div class="footer-column">
@@ -127,7 +127,7 @@
             </ul>
         </div>
     </div>    
-    </div>
     <p class="copyright"><span>&copy;</span> 2023 GameHub, All rights reserved.</p>   
 </footer>
+</body>
 </html>

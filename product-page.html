@@ -22,34 +22,35 @@
             <a href="products.html">Games</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
-            <a href="viewcart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-        </ul>
+            <a href="view-cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
     </nav>
 </header>
 <main>
 <div class="product-information">
-    <img src="images/GameHub_covers9.jpg" class="selectedproduct-img">
+    <img src="images/GameHub_covers9.jpg" class="selectedproduct-img" alt="Cyberpunk game">
     <div class="product-infotext">
     <h1>Cyberpunk</h1>
-    <p>Cyberpunk is an open-world, action-adventure RPG set in the megalopolis of Night City, where you play as a cyberpunk mercenary wrapped up in a do-or-die fight for survival. 
-    Improved and featuring all-new free additional content, customize your character and playstyle as you take on jobs, build a reputation, and unlock upgrades. 
-    The relationships you forge and the choices you make will shape the story and the world around you. Legends are made here. What will yours be?</p>
-    <div class="orange-breakline"></div>
+    <p>Cyberpunk is an open-world, action-adventure RPG set in the megalopolis of Night City, 
+    where you play as a cyberpunk mercenary wrapped up in a do-or-die fight for survival.</p>
     
+    <p>The relationships you forge and the choices you make will shape the story and the world around you. 
+    Legends are made here. What will yours be?</p>
+
     <div class="purchase-options">
     <button class="cart-btn">Add to cart</button>
-    <button class="buy-btn">Buy</button>
+    <form action="/view-cart.html">
+    <input type="submit" value="Buy" class="buy-btn">
+    </form>
     <h2>$49</h2>
-    </div>
-    <div class="orange-breakline"></div>
+    </div> 
+</div>
 </div>
 
-</div>
 </main>
-</body>
 <footer>
-    <div class="logo-footer">
+    <div class="logo">
         <img src="images/GameHub_LogoFooter.png" alt="GameHub Logo">
+        </div>
     <hr>
     <div class="footer-row">
         <div class="footer-column">
@@ -89,7 +90,7 @@
             </ul>
         </div>
     </div>    
-    </div>
     <p class="copyright"><span>&copy;</span> 2023 GameHub, All rights reserved.</p>   
 </footer>
+</body>
 </html>

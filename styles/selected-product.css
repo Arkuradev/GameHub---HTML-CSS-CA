@@ -1,4 +1,4 @@
-@import url(variables.css);
+@import url("variables.css");
 
 main {
     padding-top: 250px;
@@ -13,35 +13,39 @@ main {
 .product-information {
     display: flex;
     justify-content: center;
-    
+    padding: 20px;
 }
 .product-infotext {
-    width: 400px;
-    height: 330px;
-    margin-left: 20px;
+    width: 450px;
+    height: 600px;
+    border-radius: 0 4px 4px 0;
+    background-color: var(--clr-dark);
 }
-.product-infotext h1 {
-    padding-bottom: 60px;
+.product-infotext h1, p {
+    padding-bottom: 30px;
     text-align: center;
 }
-
 .purchase-options {
-    width: 400px;
-    height: 70px;
-    justify-content:space-between;
+    display: inline-flex;
+    margin-top: 200px;
+    margin-left: 70px;
 }
 .purchase-options h2 {
-    float: right;
-    margin-top: 8px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.cart-btn {
+ margin-right: 5px;
+ margin-left: 5px;
 }
 
 .cart-btn, .buy-btn {
-    border-color: #FF7A00;
+    border-color: var(--clr-primary);
     border-radius: 4px;
     width: 130px;
     height: 35px;
-    background-color: #FF7A00;
-    color: #FFF;  
+    background-color: var(--clr-dark);
+    color: var(--clr-primary);  
     font-weight: bold; 
     margin-top: 10px;
 }
@@ -49,16 +53,25 @@ main {
 @media (max-width: 821px){
     .product-infotext {
         font-size: 0.8em;
-    }
-    .purchase-options {
         width: 300px;
+        height: 400px;
+    }
+    .product-information p {
+        padding: 10px;
     }
     .cart-btn, .buy-btn {
-        width: 100px;
+        width: 110px;
+    }
+    .purchase-options h2 {
+        margin-top: 15px;
+    }
+    .purchase-options {
+        margin-top: 100px;
+        margin-left: 12px;
     }
     .selectedproduct-img {
         width: 300px;
-        height: auto;
+        height: 400px;
     }
 }
 
@@ -68,15 +81,17 @@ main {
         justify-content: center;
         align-items: center;
     }
+    .product-information p {
+        padding: 10px;
+    }
     .purchase-options h2 {
-        margin-top: 10px;
+        margin-top: 15px;
+    }
+    .purchase-options {
+        margin-top: 100px;
+        margin-right: 7px;
     }
     .product-infotext {
         text-align: center;
-        height: 360px;
-    }
-    .cart-btn {
-        margin-right: 10px;
-        margin-left: 25px;
     }
 }

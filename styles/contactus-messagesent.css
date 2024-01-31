@@ -8,11 +8,13 @@ main {
     height: 800px;
 }
 
-h2, h3 {
+h2, h4 {
     display: flex;
     justify-content: center;
     text-align: center;
+    padding: 20px;
 }
+
 
 #checkmark {
     padding-left: 10px;
@@ -26,6 +28,13 @@ p {
     text-align: center;
 }
 
+.message-confirmed {
+    background-color: var(--clr-dark);
+    align-items: center;
+    height: 250px;
+    border-radius: 4px;
+}
+
 .goback-link {
     text-decoration: underline;
 }
@@ -35,7 +44,7 @@ a:hover {
 }
 
 @media (max-width:720px) {
-    main {
-        width: 400px;
+    .message-confirmed {
+        height: 290px;
     }
 }

@@ -16,14 +16,14 @@
 </head>
 <body>
     <header>
-        <input type="checkbox" id="nav-checkbox">
         <label for="nav-checkbox" class="hamburger-icon"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="nav-checkbox">
         <nav>
                 <a href="index.html">Home</a>
                 <a href="products.html">Games</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
-                <a href="viewcart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="view-cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
         </nav>
     </header>
 
@@ -31,7 +31,7 @@
 <div class="contactus-container">
     <div class="contactus">    
         <div class="needhelp">
-            <div class=customerservice-box><img src="images/customerservice.png" class="customerservice-img" alt="Customer service person"></div>
+            <div class=customerservice-box><img src="images/customerservice.jpg" class="customerservice-img" alt="Customer service person"></div>
             <div class="contact-info">
             <h1>Need Help?</h1>
             <p>contact@gamehub.com</p>
@@ -40,19 +40,22 @@
         </div>
         <div class="formbox">
             <label for="name">Name</label>
-            <input type="text" class="fullname" placeholder="Name here">
+            <input type="text" name="name" id="name" class="name" placeholder="Your name">
             <label for="email">Email</label>
-            <input type="text" class="email" placeholder="Email adress here">
-            <label for="text" class="message">Message</label>
-            <textarea id="message" class="messagebox" placeholder="Input message here"></textarea>
-            <a href="contactus-confirm.html"><button class="submit-btn" id="btn">Send</button></a>
+            <input type="text" name="email" id="email" class="email" placeholder="Email adress here">
+            <label for="message" class="message">Message</label>
+            <textarea id="message" name="message" class="messagebox" placeholder="Input message here"></textarea>
+            <form action="/contactus-confirm.html">
+                <input type="submit" value="Send" class="submit-btn">
+            </form>
         </div>
     </div>
 </div>
  </main>   
  <footer>
-    <div class="logo-footer">
+    <div class="logo">
         <img src="images/GameHub_LogoFooter.png" alt="GameHub Logo">
+        </div>
     <hr>
     <div class="footer-row">
         <div class="footer-column">
@@ -92,7 +95,6 @@
             </ul>
         </div>
     </div>    
-    </div>
     <p class="copyright"><span>&copy;</span> 2023 GameHub, All rights reserved.</p>   
 </footer>
 </body>

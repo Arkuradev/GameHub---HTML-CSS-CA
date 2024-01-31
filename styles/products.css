@@ -23,6 +23,7 @@ section {
 
 .productImage {
     width: 150px;
+    border-radius: 4px 4px 0 0;
     height: auto;
 }
 
@@ -38,9 +39,7 @@ section {
 .product-container h3 {
     text-align: center;
 }
-a:hover {
-    color: var(--clr-primary);
-}
+
 .game {
     width: 150px;
     height: 300px;
