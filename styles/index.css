@@ -1,10 +1,28 @@
 @import url("variables.css");
 
 .featured-cta {
-    background-color: var(--clr-dark);
+    height: 550px;
+    background-image: url("/images/Banner5.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     text-align: center;
     line-height: 50px;
     padding-top: 90px;
+}
+.cta-info {
+    background-color: var(--clr-dark);
+    width: 160px;
+    width: 160px;
+    border-radius: 4px;
+    float: left;
+    margin-left: 75px;
+    margin-top: 130px;
+}
+.cta-background {
+    background-color: var(--clr-dark);
+    width: 160px;
 }
 .featured-cta img {
     width: 100%;
@@ -64,6 +82,9 @@
 
 
 @media (max-width: 980px) {
+    .featured-cta {
+        background-position-x: center;
+    }
     .community-container {
         flex-direction: column-reverse;
         justify-content: center;
@@ -78,11 +99,23 @@
 }
 
 @media (max-width: 720px) {
+    .featured-cta {
+        display: flex;
+        justify-content: center;
+        background-position-x: 69%;
+    }
     .featured-cta h1 {
         font-size: 1.5rem;
     }
     .featured-cta h2 {
         font-size: 1rem;
+    }
+    .cta-info {
+        margin-right: 40px;
+        margin-top: 345px;
+        line-height: 30px;
+        height: 110px;
+        padding: 10px;
     }
     .information-line h3 {
         font-size: 0.5rem;
@@ -120,6 +153,7 @@
 }
 
 @media (max-width: 300px) {
+    
     .information-line h3 {
         font-size: 0.5rem;
         margin-left: 10px;
