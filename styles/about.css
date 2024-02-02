@@ -1,6 +1,34 @@
+@import url("variables.css");
 
+main {
+    padding-top: 180px;
+}
+
+.first-section, .second-section, .third-section {
+    display: flex;
+}
+
+.gamehub-info {
+    width: 600px;
+    margin-left: 150px;
+}
+.gamehub-info h1 {
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+.gamehub-info p {
+    line-height: 25px;
+}
+.p-bg {
+    background-color: var(--clr-dark);
+    border-radius: 4px;
+    opacity: 80%;
+    padding: 10px;
+}
 
 .gamehub-logo {
     width: 450px;
     height: auto;
+    margin-left: 350px;
+    margin-top: 80px;
 }
