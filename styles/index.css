@@ -2,7 +2,7 @@
 
 .featured-cta {
     height: 600px;
-    background-image: url("../images/Banner5.jpg");
+    background-image: url("/images/Banner5.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
