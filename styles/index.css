@@ -16,7 +16,7 @@
 .cta-info {
     background-color: var(--clr-dark);
     width: 160px;
-    width: 160px;
+    height: auto;
     border-radius: 4px;
     float: left;
     margin-left: 230px;
@@ -24,7 +24,6 @@
 }
 .cta-background {
     background-color: var(--clr-dark);
-    width: 160px;
 }
 .featured-cta img {
     width: 100%;
@@ -46,19 +45,6 @@
     justify-content: center;
     align-items: center;
 }
-.trending-games h2 {
-    margin-bottom: 10px;
-}
-.trending-container {
-    width: 1200px;
-    height: 330px;
-    background-color: var(--clr-dark);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2em;
-}
-
 .information-line {
     background-color: var(--clr-dark);
     border-top: solid 3px var(--clr-primary);
@@ -114,23 +100,21 @@
     justify-content: center;
     align-items: center;
 }
-.featured-container {
-    margin-top: 20px;
+.featured-container, .trending-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2em;
-    width: 1200px;
-    height: 330px;
+    gap: 1.5em;
+    width: 950px;
+    height: auto;
     background-color: var(--clr-dark);
     border-radius: 4px;
+    padding: 10px;
 }
 .featured-img {
-    margin-top: 10px;
-    width: 230px;
+    width: 200px;
     height: auto;
     border-radius: 8px;
-    border: solid 3px var(--clr-dark);
 }
 .featured-img:hover {
     opacity: 70%;
@@ -237,11 +221,11 @@
         border-radius: 0 0 4px 4px;
     }
     .featured-container, .trending-container {
-        width: 800px;
+        width: 600px;
         height: auto;
         padding: 20px;
         flex-wrap: wrap;
-        margin-bottom: 250px;
+        margin-bottom: 50px;
     }
     .featured-feedback-img {
         margin-top: 70px;
@@ -260,6 +244,9 @@
         align-items: center; 
         flex-wrap: wrap;
     }
+    .userfeedback-container {
+        width: 285px;
+    }
 }
 @media (max-width: 720px) {
     .featured-cta {
@@ -270,15 +257,15 @@
     .featured-cta h1 {
         font-size: 1.5rem;
     }
-    .featured-cta h2 {
-        font-size: 1rem;
+    .featured-cta h2, .trending-games h2, .community-info h2, .featured-games h2, .user-feedback h2 {
+        font-size: 1.2rem;
     }
     .cta-info {
         margin-right: 40px;
         margin-top: 345px;
-        line-height: 30px;
-        height: 110px;
+        line-height: 20px;
         padding: 10px;
+        height: 125px;
     }
     .information-line h3 {
         font-size: 0.5rem;
