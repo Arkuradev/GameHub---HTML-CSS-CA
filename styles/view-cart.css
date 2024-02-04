@@ -112,6 +112,7 @@ h1 {
 }
 .discount-code {
     height: 25px;
+    width: 130px;
     margin-top: 50px;
     border: 1px solid var(--clr-primary);
     background-color: var(--clr-dark-grey);
@@ -138,27 +139,26 @@ input:focus::-webkit-input-placeholder {
     display: flex;
     flex-direction: column;
     float: right;
-    width: 310px;
+    width: 285px;
     height: 200px;
     margin-top: 50px;
     margin-right: 150px;
+    line-height: 40px;
 }
 .subtotal {
-    word-spacing: 180px;
+    word-spacing: 171px;
     padding-left: 10px;
 }
 .discount-amount {
-    word-spacing: 186px;
+    word-spacing: 176px;
     background-color: var(--clr-dark);
     border-radius: 10px;
-    width: 310px;
     padding-left: 10px;
 }
 .totalamount-checkout {
-    word-spacing: 210px;
+    word-spacing: 200px;
     padding-left: 10px;
 }
-
 .checkoutline {
     border: 1px solid var(--clr-primary);
     margin-bottom: 20px;
@@ -182,22 +182,19 @@ footer {
     .description {
         font-size: 0.7rem;
     }
-    .quantity-container, .price-container, .totalprice-container {
-        font-size: 0.8rem;
-
-    }
     .checkout-container {
         float: none;
         margin: 0 auto;
         margin-top: 100px;
         line-height: 40px;
     }
-    footer {
-        margin-top: 100px;
-    }
 }
 @media (max-width: 860px) {
 
+    .header-links {
+        padding: 30px;
+        font-size: 12px;
+    }
     .product-container {
         margin: 0 auto;
     }
@@ -209,14 +206,33 @@ footer {
         margin-bottom: 15px;
     }
     .basket-container {
-        flex-direction: column;
+       flex-direction: column;
     }
-    .quantity-container {
-        padding: 30px; 
+    .quantity-container, .price-container, .totalprice-container {
+        display: flex;
+    }
+    .quantity-container, .price-container, .totalprice-container {
+        font-size: 0.8rem;
+    }
+    .quantity-container h3 {
+        margin-top: 20px;
+        width: 100px;
+    }
+    .price-container, .totalprice-container {
+        margin-top: 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .price-container h3, .totalprice-container h3 {
+        width: 100px;
+        margin-top: 27px;
+    }
+    .price, .amount, .discount {
+        width: 100px;
     }
     .button-bg {
         position: relative;
-        margin: 0 auto;
         margin-top: 20px;
     }
     .price {
@@ -238,9 +254,17 @@ footer {
     }
     .checkout-container {
         margin-top: 50px;
-        line-height: 40px;
+        font-size: 0.8rem;
     }
-
+    .subtotal {
+        word-spacing: 187px;
+    }
+    .discount-amount {
+        word-spacing: 190px;
+    }
+    .totalamount-checkout {
+        word-spacing: 210px;
+    }
 }
 
 
