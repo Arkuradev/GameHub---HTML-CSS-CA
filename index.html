@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The universal site to buy games on, come and see for yourself!">
+    <meta name="description" content="GameHub - The universal site to buy games on, come and see for yourself!">
     <title>GameHub | Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,8 +15,8 @@
 </head>
 <body>
     <header>
-        <input type="checkbox" id="nav-checkbox">
-        <label for="nav-checkbox" class="hamburger-icon"><i class="fas fa-bars"></i></label>
+        <label for="nav-checkbox" class="hamburger-icon" aria-label="Menu for mobile users"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="nav-checkbox" aria-label="Open the menu">
         <nav>
                 <a href="index.html">Home</a>
                 <a href="products.html">Games</a>
@@ -40,19 +40,19 @@
     <h2>Trending Games</h2>
     <div class="trending-container">
         <a href="product-page.html">
-            <img src="images/GameHub_covers5.jpg" alt="Trending games" class="featured-img">
+            <img src="images/GameHub_covers5.jpg" alt="Assassin - Trending right now" class="featured-img">
             <div class="title-description">Assassin - $49</div>
         </a>
         <a href="product-page.html">
-            <img src="images/GameHub_covers10.jpg" alt="Trending games" class="featured-img">
+            <img src="images/GameHub_covers10.jpg" alt="Forge Legend - Trending right now" class="featured-img">
             <div class="title-description">Forge Legend - $49</div>
         </a>
         <a href="product-page.html">
-            <img src="images/GameHub_covers4.jpg" alt="Trending games" class="featured-img">
+            <img src="images/GameHub_covers4.jpg" alt="Furious - Trending right now" class="featured-img">
             <div class="title-description">Furious - $49</div>
         </a>
         <a href="product-page.html">
-            <img src="images/GameHub_covers3.jpg" alt="Trending games" class="featured-img">
+            <img src="images/GameHub_covers3.jpg" alt="Black - Trending right now" class="featured-img">
             <div class="title-description">Black - $49</div>
         </a>
         
@@ -88,19 +88,19 @@
     <h2>Bestsellers</h2>
     <div class="featured-container">
         <a href="product-page.html">  
-        <img src="images/GameHub_covers.jpg"  alt="game hub covers" class="featured-img" id="featured-image1">
+        <img src="images/GameHub_covers.jpg"  alt="Bestseller right now: Ping Pong Championship" class="featured-img" id="featured-image1">
         <div class="title-description">Ping Pong - $49</div>
         </a>
         <a href="product-page.html">
-        <img src="images/GameHub_covers5.jpg" alt="game hub covers" class="featured-img" id="featured-image2">
+        <img src="images/GameHub_covers5.jpg" alt="Bestseller right now: Assassin" class="featured-img" id="featured-image2">
         <div class="title-description">Assassin - $49</div>
         </a>
         <a href="product-page.html">
-        <img src="images/GameHub_covers7.jpg" alt="game hub covers" class="featured-img" id="featured-image3">
+        <img src="images/GameHub_covers7.jpg" alt="Bestseller right now: Racing" class="featured-img" id="featured-image3">
         <div class="title-description">Racing - $49</div>
         </a>
         <a href="product-page.html">
-        <img src="images/GameHub_covers9.jpg" alt="game hub covers" class="featured-img" id="featured-image4">
+        <img src="images/GameHub_covers9.jpg" alt="Bestseller right now: Cyberpunk" class="featured-img" id="featured-image4">
         <div class="title-description">Cyberpunk - $49</div>
         </a>
     </div>
@@ -122,7 +122,7 @@
     <div class="userfeedback-container">
             <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9734;
             </div>
-            <a href="product-page.html" class="rating-link">Game: Racing</a>
+            <a href="product-page.html" class="rating-link" aria-label="Racing">Game: Racing</a>
             <div class="rating-description">
             Had some issues to begin with but customer service helped me!
             </div>
@@ -131,7 +131,7 @@
     <div class="userfeedback-container">
             <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733;
             </div>
-            <a href="product-page.html" class="rating-link">Game: Cyberpunk</a>
+            <a href="product-page.html" class="rating-link" aria-label="Cyberpunk">Game: Cyberpunk</a>
             <div class="rating-description">
                 Perfect! 10/10! So easy to shop and game downloads right away.
             </div>
@@ -140,7 +140,7 @@
     <div class="userfeedback-container">
             <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733;
             </div>
-            <a href="product-page.html" class="rating-link">Game: Forge Legend</a>
+            <a href="/product-page.html" class="rating-link" aria-label="Forge Legend">Game: Forge Legend</a>
             <div class="rating-description">
                 Great game! Theres hours and hours of gameplay.
             </div>
@@ -149,15 +149,14 @@
     <div class="userfeedback-container">
             <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733;
             </div>
-            <a href="product-page.html" class="rating-link">Game: Space War</a>
+            <a href="product-page.html" class="rating-link" aria-label="Space War">Game: Space War</a>
             <div class="rating-description">
                 Games are great, community is great. Everything is great!
             </div>
             <h5>23 hours ago</h5>
     </div>
 </div>
-</section>
-    
+</section>  
 </main> 
 <footer>
     <div class="logo">
@@ -166,7 +165,7 @@
     <hr>
     <div class="footer-row">
         <div class="footer-column">
-            <h4>Information</h4>
+            <h2 class="footer-h2">Information</h2>
             <ul>
                 <li><a href="#">About us</a></li>
                 <li><a href="#">Our Services</a></li>
@@ -175,7 +174,7 @@
             </ul>
         </div>
         <div class="footer-column">
-            <h4>Get Help</h4>
+            <h2 class="footer-h2">Get Help</h2>
             <ul>
                 <li><a href="#">FAQ</a></li>
                 <li><a href="#">Shipping</a></li>
@@ -184,7 +183,7 @@
             </ul>
         </div>
         <div class="footer-column">
-        <h4>Shopping</h4>
+        <h2 class="footer-h2">Shopping</h2>
             <ul>
                 <li><a href="#">Play Station Games</a></li>
                 <li><a href="#">PC Games</a></li>
@@ -193,7 +192,7 @@
             </ul>
         </div>
         <div class="footer-column">
-        <h4>Get Help</h4>
+        <h2 class="footer-h2">Get Help</h2>
             <ul>
                 <li><a href="#">FAQ</a></li>
                 <li><a href="#">Shipping</a></li>
@@ -201,7 +200,7 @@
                 <li><a href="#">Payment Options</a></li>
             </ul>
         </div>
-    </div>
+    </div>    
     <p class="copyright"><span>&copy;</span> 2023 GameHub, All rights reserved.</p>   
 </footer>
 </body>

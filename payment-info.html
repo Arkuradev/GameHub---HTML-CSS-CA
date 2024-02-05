@@ -16,14 +16,14 @@
 </head>
 <body>
     <header>
-        <input type="checkbox" id="nav-checkbox">
-        <label for="nav-checkbox" class="hamburger-icon"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="nav-checkbox" aria-label="Open the menu">
+        <label for="nav-checkbox" class="hamburger-icon" aria-label="Menu for mobile users"><i class="fas fa-bars"></i></label>
         <nav>
                 <a href="index.html">Home</a>
                 <a href="products.html">Games</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
-                <a href="view-cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="view-cart.html" aria-label="Cart"><i class="fa-solid fa-cart-shopping"></i></a>
         </nav>
     </header>
 
@@ -31,8 +31,8 @@
         <section class="paymentinfo">
             <div class="paymentinfo-container">
         <div class="progressbar-payment">    
-            <a href="payment-options.html"><i class="fa-solid fa-arrow-left" id="arrow-left"></i></a>
-            <a href="index.html"><i class="fa-solid fa-xmark" id="x-mark"></i></a>
+            <a href="payment-options.html" aria-label="Go back"><i class="fa-solid fa-arrow-left" id="arrow-left"></i></a>
+            <a href="index.html" aria-label="Exit, back to Home page"><i class="fa-solid fa-xmark" id="x-mark"></i></a>
             <h1>Credit Card Details</h1>
             <div class="one">1</div>
             <div class="orangeline"></div>
@@ -45,7 +45,7 @@
             <img src="images/creditcard.jpg" alt="Example of a Visa Card" class="cc-img">
         </div>
         <fieldset>
-            <label for="card-number">Card number</label>
+            <legend><label for="card-number">Card number</label></legend>
             <input type="text" name="card-number" id="card-number" class="form__input" required>
             <label for="expire-date">Expire date</label>
             <input type="month" name="expire-date" id="expire-date" class="form__input" required>
@@ -54,7 +54,7 @@
             <label for="card-holder">Card holder name</label>
             <input type="text" name="card-holder" id="card-holder" class="form__input" required>
         </fieldset>
-        <form action="/confirm-payment.html">
+        <form action="./confirm-payment.html">
             <input type="submit" value="Confirm" class="payment-btn">
         </form>
         </div>
@@ -67,7 +67,7 @@
         <hr>
         <div class="footer-row">
             <div class="footer-column">
-                <h4>Information</h4>
+                <h2 class="footer-h2">Information</h2>
                 <ul>
                     <li><a href="#">About us</a></li>
                     <li><a href="#">Our Services</a></li>
@@ -76,7 +76,7 @@
                 </ul>
             </div>
             <div class="footer-column">
-                <h4>Get Help</h4>
+                <h2 class="footer-h2">Get Help</h2>
                 <ul>
                     <li><a href="#">FAQ</a></li>
                     <li><a href="#">Shipping</a></li>
@@ -85,7 +85,7 @@
                 </ul>
             </div>
             <div class="footer-column">
-            <h4>Shopping</h4>
+            <h2 class="footer-h2">Shopping</h2>
                 <ul>
                     <li><a href="#">Play Station Games</a></li>
                     <li><a href="#">PC Games</a></li>
@@ -94,7 +94,7 @@
                 </ul>
             </div>
             <div class="footer-column">
-            <h4>Get Help</h4>
+            <h2 class="footer-h2">Get Help</h2>
                 <ul>
                     <li><a href="#">FAQ</a></li>
                     <li><a href="#">Shipping</a></li>

@@ -1,10 +1,22 @@
 To-do list as of 28th of January 2024: 
 
-1. Finish the payment pages and link them together so I can go through the purchase flow. 
-2. Fix the basket page on mobile to have the Quantity, Price and Total section listed differently to look better for the viewer. 
-2. Remake the footer as this is mostly followed through a tutorial and not made completely on my own. - Completed!
-3. Finish the index.html page. 
-4. Make corrections to the contact page to have both colored divs equal size. 
-5. Resize all images to take up as little space as possible. 
 6. Finish the about page. 
-7. 
+
+
+
+
+Validating Pages: 
+Index.html - Validated
+confirm-payment.html - Validated
+contact.html - Validated
+contactus-confirm.html - Validated
+payment-info.html - Validated
+
+
+
+Wave tool pages: 
+Index.html - Waved
+confirm-payment.html - Waved
+contact.html - Waved
+contactus-confirm.html - Waved
+payment-info.html - Waved
