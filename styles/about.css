@@ -1,12 +1,11 @@
 @import url("variables.css");
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 main {
     padding-top: 180px;
 }
 
 h1 {
-    font-family: 'Permanent Marker', cursive;
+    
     text-align: center;
 }
 .first-section, .second-section, .third-section, .fourth-section {

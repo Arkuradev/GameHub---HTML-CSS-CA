@@ -124,7 +124,7 @@ nav a:hover {
         flex-wrap: wrap;
         overflow-x: hidden;
     }
-    .footer-column h2 {
+    .footer-h2, .footer-column h2 {
         text-align: center;
     }
     .footer-column li {
