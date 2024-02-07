@@ -69,7 +69,7 @@ main {
         font-size: 20px;
     }
     .purchase-options {
-        margin-top: 100px;
+        margin-top: 80px;
         margin-left: 12px;
     }
     .selectedproduct-img {
@@ -91,10 +91,13 @@ main {
         margin-top: -5px;
     }
     .purchase-options {
-        margin-top: 100px;
+        margin-top: 80px;
         margin-right: 7px;
     }
     .product-infotext {
         text-align: center;
+    }
+    .purchase-options {
+        padding-bottom: 20px;
     }
 }
