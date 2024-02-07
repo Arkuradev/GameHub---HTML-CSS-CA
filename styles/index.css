@@ -189,6 +189,12 @@
     }
 }
 
+@media (max-width: 1000px) {
+    .featured-feedback-img {
+        margin-top: 26px;
+    }
+} 
+
 @media (max-width: 983px) {
     .featured-cta {
         background-position-x: center;
