@@ -246,7 +246,8 @@
         font-size: 1.5rem;
     }
     .featured-cta h2, .trending-games h2, .community-info h2, .featured-games h2, .user-feedback h2 {
-        font-size: 1.2rem;
+        font-size: 1.7rem;
+        letter-spacing: 2px;
     }
     .cta-info {
         margin-right: 40px;

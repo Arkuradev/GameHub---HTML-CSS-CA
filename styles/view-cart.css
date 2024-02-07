@@ -186,7 +186,7 @@ input:focus::-webkit-input-placeholder {
 @media (max-width: 860px) {
 
     .header-links {
-        padding: 30px;
+        padding-top: 30px;
         font-size: 12px;
     }
     .product-container {

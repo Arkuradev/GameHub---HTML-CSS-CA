@@ -66,4 +66,8 @@ footer {
     .product-container {
         width: 400px;
     }   
+    .h2-heading {
+        font-size: 40px;
+        letter-spacing: 1px;
+    }
 }
