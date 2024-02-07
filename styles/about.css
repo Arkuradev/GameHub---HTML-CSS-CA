@@ -1,71 +1,36 @@
 @import url("variables.css");
 
 main {
-    padding-top: 180px;
+    padding-top: 150px;
 }
-
 h1 {
-    
     text-align: center;
 }
-.first-section, .second-section, .third-section, .fourth-section {
-    display: flex;
-    flex-direction: column;
-}
-
-.gamehub-info, .general-info, .resell-container, .esport-info {
-    width: 600px;
-    text-align: center;
-    margin: 0 auto;
-}
-.gamehub-info h2, .general-info h2, .resell-container h2, .esport-info h2 {
-    padding-top: 30px;
-    padding-bottom: 20px;
+h2 {
     font-size: 30px;
 }
-.gamehub-info, .general-info, .resell-container, .esport-info p {
-    line-height: 25px;
-   
+p {
+    padding-left: 20px;
+    padding-bottom: 20px;
 }
-.p-bg {
+.games-link {
+    text-decoration: underline;
+}
+.about-content {
     background-color: var(--clr-dark);
-    border-radius: 4px;
-    padding: 10px;
+    padding: 20px;
+    padding-bottom: 50px;
 }
-
-.gamehub-logo, .esport-img {
-    padding-top: 30px;
-    margin: 0 auto;
-}
-
-.gamehub-logo {
-    width: 450px;
-    height: auto;
-}
-.esport-img {
-    width: 700px;
-    height: auto;
-    border-radius: 8px;
-}
-
 
 @media (max-width: 720px) {
-    .esport-img {
-        width: 600px;
-    
+    .h2-heading {
+        font-size: 40px;
     }
-}
-@media (max-width: 620px) {
-    .gamehub-info h2, .general-info h2, .resell-container h2, .esport-info h2 {
-        font-size: 1.2rem;
+    h2 {
+        font-size: 20px;
+        padding-top: 20px;
     }
-    .gamehub-info, .general-info, .resell-container, .esport-info p {
-        font-size: 0.7rem;
-    }
-    .p-bg {
-        width: 400px;
-    }
-    .esport-img, .gamehub-logo {
-        width: 400px;
+    p {
+        font-size: 14px;
     }
 }

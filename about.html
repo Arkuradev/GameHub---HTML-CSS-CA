@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="homepage" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="What is GameHub? Find out all about us here!">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,60 +16,38 @@
 <body>
 
 <header>
-    <input type="checkbox" id="nav-checkbox">
-    <label for="nav-checkbox" class="hamburger-icon"><i class="fas fa-bars"></i></label>
+    <input type="checkbox" id="nav-checkbox" aria-label="Open the menu">
+    <label for="nav-checkbox" class="hamburger-icon" aria-label="Menu for mobile users"><i class="fas fa-bars"></i></label>
         <nav>
             <a href="index.html">Home</a>
             <a href="products.html">Games</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
-            <a href="view-cart.html"><i class="fa-solid fa-cart-shopping"></i></a>    
+            <a href="view-cart.html" aria-label="Cart"><i class="fa-solid fa-cart-shopping"></i></a>    
         </nav>
 </header>
 <main>
-    <h1>About Us</h1>
-    <section class="first-section">
-        <div class="gamehub-info">
-        <h2>Who are we?</h2>
-            <div class="p-bg">
-            <p>GameHub is an online shop where users can purchase computer games anywhere in the world!
-            This gaming marketplace lets you buy tons of video games online for any device. 
-            GameHub is a competitively priced website with a huge range of games.</p></div>
-            </div>
-            <img src="images/GameHub_LogoNEW.png" class="gamehub-logo" alt="GameHub logo - The universe of games">
-    </section>
-    
-            
+    <h1 class="h2-heading">About Us</h1>
 
-    <section class="second-section">
-        <div class="general-info">
-            <h2>Gaming Partners & Content Creators</h2>
-            <div class="p-bg">
-            <p>We promote streamers, content creators and want to help grow their communities</p>
-            <p>GameHub will host events together with our gaming partners wich will offer rewards when you engage in their content/stream</p>
-            </div>
-        </div>
-    </section>
-    <section class="third-section">
-        <div class="resell-container">
-            <h2>Sell your games back to us</h2>
-            <div class="p-bg">
-            <p>Here at GameHub you can sell your game back to us after you are done playing it with the game digital key.</p>
-            <p>This way you get to buy different games at an affordable price!</p>
-            </div>
-        </div>
-    </section>
-   
-    <section class="fourth-section">
-        <div class="esport-info">
-            <h2>We believe in E-Sports</h2>
-            <div class="p-bg">
-            <p>We support the E-sport scene!</p>
-            <p>Will feature streams and give game rewards for watching</p>
-            </div>
-        </div>
-        <img src="images/esport-img.jpg" class="esport-img" alt="E-sports team">
-    </section>        
+<section class="about-content">
+    <h2>About GameHub</h2>
+    <p>GameHub is an online store where users can purchase computer and console games anywhere in the world! 
+    This gaming marketplace lets you buy tons of video games online for any device.</p>
+    <p>GameHub is a competitively priced website with a huge range of games.</p>
+
+    <h2>Gaming Partners & Content Creators</h2>
+    <p>We promote streamers, content creators and want to help grow their communities.</p>
+    <p>GameHub will host events together with our gaming partners wich will offer rewards when you engage in their content/stream.</p>
+
+    <h2>Sell your games back to us</h2>
+    <p>Here at GameHub you can sell your game back to us at a reduced price after you are done playing it with the game digital key.</p>
+    <p>This way you get to buy different games at an affordable price while also supporting its developers!</p>
+    <p>You can check out the games we currently offer <a href="/products.html" class="games-link">here.</a></p>
+
+    <h2>We love E-Sports</h2>
+    <p>GameHub is an active supporter and sponsor of several major E-sport events.</p>
+    <p>We try our best to contribute to the gaming community by attending these events and support content creators in making good content.</p>
+</section>
 </main>
 <footer>
     <div class="logo">
