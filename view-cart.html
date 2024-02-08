@@ -15,24 +15,19 @@
 </head>
 <body>
 <header>
-    <input type="checkbox" id="nav-checkbox">
-    <label for="nav-checkbox" class="hamburger-icon"><i class="fas fa-bars"></i></label>
+    <input type="checkbox" id="nav-checkbox" aria-label="Open the menu">
+    <label for="nav-checkbox" class="hamburger-icon" aria-label="Menu for mobile users"><i class="fas fa-bars"></i></label>
     <nav>
             <a href="index.html">Home</a>
             <a href="products.html">Games</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
-            <a href="view-cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="view-cart.html" aria-label="Cart"><i class="fa-solid fa-cart-shopping"></i></a>
     </nav>
 </header>
  <main>
 
-<div class="header-container">
-    <h1>Basket</h1>
-    <div class="header-links">
-    <a href="#">Add as wishlist</a> - 
-    <a href="#"> Clear basket</a>
-    </div>
+<h1>Basket</h1>
 </div>
 
 <div class="basket-container">
@@ -64,9 +59,11 @@
 
 
 <div class="discount-container">
-    <label for="discount"></label>
-    <input type="text" id="discount" class="discount-code" placeholder="Discount Code">
-    <button class="discount-btn">Claim</button>
+    <label for="discount">Code</label>
+    <input type="text" name="discount-code" id="discount" class="discount-code">
+    <form action="./view-cart.html">
+    <input type="submit" value="Claim" class="discount-btn">
+    </form>
 </div>
 <div class="checkout-container">
     <div class="subtotal">Subtotal $49</div>

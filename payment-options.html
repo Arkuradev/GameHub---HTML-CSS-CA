@@ -15,22 +15,22 @@
 </head>
 <body>
     <header>
-        <input type="checkbox" id="nav-checkbox">
-        <label for="nav-checkbox" class="hamburger-icon"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="nav-checkbox" aria-label="Open the menu">
+        <label for="nav-checkbox" class="hamburger-icon" aria-label="Menu for mobile users"><i class="fas fa-bars"></i></label>
         <nav>
                 <a href="index.html">Home</a>
                 <a href="products.html">Games</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
-                <a href="view-cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="view-cart.html" aria-label="Cart"><i class="fa-solid fa-cart-shopping"></i></a>
         </nav>
     </header>
 <main>
 <section class="paymentinfo">
     <div class="paymentinfo-container">
 <div class="progressbar-payment">    
-    <a href="./view-cart.html"><i class="fa-solid fa-arrow-left" id="arrow-left"></i></a>
-    <a href="./index.html"><i class="fa-solid fa-xmark" id="x-mark"></i></a>
+    <a href="./view-cart.html" aria-label="Go back"><i class="fa-solid fa-arrow-left" id="arrow-left"></i></a>
+    <a href="./index.html" aria-label="Exit, back to Home page"><i class="fa-solid fa-xmark" id="x-mark"></i></a>
     <h1>Make Payment</h1>
     <div class="one">1</div>
     <div class="orangeline"></div>
@@ -41,7 +41,8 @@
 
 
 <fieldset>
-    <label for="name">First name</label>
+    
+    <legend><label for="name">First name</label></legend>
     <input type="text" name="name" id="name" class="form__input" required>
     <label for="last-name">Last name</label>
     <input type="text" name="last-name" id="last-name" class="form__input" required>
@@ -51,7 +52,7 @@
     <input type="tel" name="phone" id="phone" class="form__input">
 </fieldset>
 <fieldset>
-    <label for="adress">Adress</label>
+    <legend><label for="adress">Adress</label></legend>
     <input type="text" name="adress" id="adress" class="form__input" required>
     <label for="area-code">Area code</label>
     <input type="text" name="area-code" id="area-code" class="form__input" required>
