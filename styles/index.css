@@ -1,5 +1,9 @@
 @import url("variables.css");
 
+main {
+    padding-top: 85px;
+}
+
 .featured-cta {
     height: 600px;
     background-image: url("../images/Banner5.jpg");
