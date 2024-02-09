@@ -93,45 +93,6 @@ nav a:hover {
 }
 
 
-@media (min-width: 720px){
-    nav {
-        display: block;
-        position:static;
-        text-align: center;
-    }
-
-    .hamburger-icon {
-        display: none;
-    }
-    .cart-icon-mobile {
-        display: none;
-    }
-
-    nav a {
-        display: inline-block;
-        width: 90px;
-    }
-    
-}
-
-@media (max-width: 840px) {
-    footer {
-        font-size: 0.7rem;
-    }
-}
-@media (max-width: 720px) {
-    .footer-row {
-        flex-wrap: wrap;
-        overflow-x: hidden;
-    }
-    .footer-h2, .footer-column h2 {
-        text-align: center;
-    }
-    .footer-column li {
-        text-align: center;
-    }
-}
-
 /* FOOTER STYLING */
 
 footer {
@@ -178,4 +139,43 @@ footer a:hover {
     margin-top: 20px;
     text-align: center;
     padding-bottom: 10px;
+}
+
+@media (min-width: 720px){
+    nav {
+        display: block;
+        position:static;
+        text-align: center;
+    }
+
+    .hamburger-icon {
+        display: none;
+    }
+    .cart-icon-mobile {
+        display: none;
+    }
+
+    nav a {
+        display: inline-block;
+        width: 90px;
+    }
+    
+}
+
+@media (max-width: 840px) {
+    footer {
+        font-size: 0.7rem;
+    }
+}
+@media (max-width: 720px) {
+    .footer-row {
+        flex-wrap: wrap;
+        overflow-x: hidden;
+    }
+    .footer-h2, .footer-column h2 {
+        text-align: center;
+    }
+    .footer-column li {
+        text-align: center;
+    }
 }
