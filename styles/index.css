@@ -247,6 +247,9 @@ main {
     }
 }
 @media (max-width: 720px) {
+    main {
+        padding-top: 65px;
+    }
     .featured-cta {
         display: flex;
         justify-content: center;
