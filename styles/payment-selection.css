@@ -1,8 +1,5 @@
 @import url("variables.css");
 
-main {
-    padding-top: 150px;
-}
 
 .paymentinfo {
     display: flex;
@@ -168,6 +165,9 @@ h3 {
     .credit-card, .paypal, .bank {
         width: 170px;
         font-size: 0.7rem;
+    }
+    h1 {
+        font-size: 1rem;
     }
 }
 

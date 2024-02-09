@@ -39,12 +39,17 @@ p {
     text-decoration: underline;
 }
 
-a:hover {
-    color: var(--clr-primary);
-}
-
 @media (max-width:720px) {
     .message-confirmed {
         height: 290px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 12px;
     }
 }

@@ -1,11 +1,6 @@
 @import url("variables.css");
 
 
-main {
-    padding-top: 200px;
-    padding-bottom: 200px;
-}
-
 h1 {
     margin-left: 5px;
 }
@@ -26,7 +21,7 @@ h1 {
     align-items: center;
     text-align: center;
     background-color: var(--clr-dark);
-    border-radius: 5px;;
+    border-radius: 5px;
 }
 .basketproduct-img {
     padding: 5px;
