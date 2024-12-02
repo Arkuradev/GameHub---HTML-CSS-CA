@@ -1,4 +1,5 @@
-#GameHub
+# GameHub
+
 A user-friendly website for buying and selling games at great prices. This project focuses on providing
 an intuitive interface for users to explore, purchase and sell back games without compromising on quality.
 
@@ -25,3 +26,28 @@ No external frameworks was used in this project.
 - Showcase clean and responsive web design principles.
 - Prioritize ease of navigation and a seamless user experience.
 - Create an engaging layout that conveys the theme of gaming and commerce.
+
+## Features
+
+- Game Catalog: A product page displaying all games on offer.
+- Purchase: Seamless and easy to use purchase
+- Responsive Design: Optimized for viewing on desktop, tablets and mobile devices.
+- Navigation bar: Easy-to-use navigation links for home, browse games, about and contact pages.
+- Footer: Contains links to everything related to GameHub
+
+## Technologies Used
+
+- HTML5: Structure and content.
+- CSS3: Styling and layout, including responsive design.
+
+## Getting started
+
+### Prerequisites
+
+- A modern web browswer (e.g Chrome, Firefox, Safari).
+
+### Steps
+
+1. Clone or download the repository
+
+2. Open the index.html file in your browser to view the site.
