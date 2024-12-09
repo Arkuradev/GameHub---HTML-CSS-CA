@@ -44,10 +44,15 @@ No external frameworks was used in this project.
 
 ### Prerequisites
 
-- A modern web browswer (e.g Chrome, Firefox, Safari).
+- A modern web browser (e.g Chrome, Firefox, Safari).
 
 ### Steps
 
-1. Clone or download the repository
+1. Clone or download the repository: git clone https://github.com/Arkuradev/GameHub---HTML-CSS-CA.git
 
 2. Open the index.html file in your browser to view the site.
+
+## Future Enhancements
+
+- Create cards for each product which would look better then a div container with an image centered.
+- Add JavaScript functionality to the site so the user can simulate the purchase and selling of games.
