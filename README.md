@@ -1,5 +1,7 @@
 # GameHub
 
+![Image of Gamehub front page](image.png)
+
 A user-friendly website for buying and selling games at great prices. This project focuses on providing
 an intuitive interface for users to explore, purchase and sell back games without compromising on quality.
 
